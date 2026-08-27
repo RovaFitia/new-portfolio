@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'ABC Solar Display Bold';
+    src: url('/fonts/ABCSolarDisplay-Bold-Trial.otf')  format('truetype');
+    font-style: normal;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
+
+@font-face {
+    font-family: 'ABC Solar Display Medium';
+    src: url('/fonts/ABCSolarDisplay-Medium-Trial.otf')  format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
+
+@font-face {
+    font-family: 'ABC Solar Display Regular';
+    src: url('/fonts/ABCSolarDisplay-Regular-Trial.otf')  format('truetype');
+    font-style: normal;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
+
+@font-face {
+    font-family: 'Geist Pixel';
+    src: url('/fonts/GeistPixel.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
+
+@font-face {
+    font-family: 'Haffer Mono SemiBold';
+    src: url('/fonts/HafferMono-SemiBold.otf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
+
+@font-face {
+    font-family: 'Haffer Mono Medium';
+    src: url('/fonts/HafferMono-Medium.otf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
+
+@font-face {
+    font-family: 'Haffer Mono Regular';
+    src: url('/fonts/HafferMono-Regular.otf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    cursor: crosshair;
+    transition: all;
+    white-space: pre;
+}
