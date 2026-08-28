@@ -1,14 +1,6 @@
 import { cn } from "@/utils/cn";
 import { ChevronRight } from "lucide-react";
-
-type ButtonProps = {
-    variant?: 'solid' | 'ghost' | 'super';
-    size?: 'md' | 'lg';
-    className?: string;
-    children: React.ReactNode;
-    href?: string;
-    icon?: boolean;
-};
+import type { ButtonProps } from "@/types/Button";
 
 const Button = ({ variant = 'solid', size = 'md', className, href, children, icon = false }: ButtonProps) => {
     const sizes = {
