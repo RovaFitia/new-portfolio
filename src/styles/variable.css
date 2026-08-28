@@ -1,0 +1,116 @@
+@theme {
+    /* Police */
+    --font-solar-b: "ABC Solar Display Bold", sans-serif;
+    --font-solar-md: "ABC Solar Display Medium", sans-serif;
+    --font-solar-r: "ABC Solar Display Regular", sans-serif;
+    --font-pixel: "Geist Pixel", monospace;
+    --font-haffer-sb: "Haffer Mono SemiBold", sans-serif;
+    --font-haffer-md: "Haffer Mono Medium", sans-serif;
+    --font-haffer-r: "Haffer Mono Regular", sans-serif;
+
+    --color-primary-50: #fefcf1;
+    --color-primary-100: #fdf9e3;
+    --color-primary-200: #f9f0bd;
+    --color-primary-300: #fbea88;
+    --color-primary-400: #fae261;
+    --color-primary-500: #f7d308;
+    --color-primary-600: #d0b107;
+    --color-primary-700: #a89005;
+    --color-primary-800: #816e04;
+    --color-primary-900: #5c4f0a;
+    --color-primary-950: #3c3407;
+    --color-secondary-50: #fefcf1;
+    --color-secondary-100: #fdf9e3;
+    --color-secondary-200: #f9f0bd;
+    --color-secondary-300: #fbea88;
+    --color-secondary-400: #fae261;
+    --color-secondary-500: #f7d308;
+    --color-secondary-600: #d0b107;
+    --color-secondary-700: #a89005;
+    --color-secondary-800: #816e04;
+    --color-secondary-900: #5c4f0a;
+    --color-secondary-950: #3c3407;
+    --color-accent-50: #fef4f0;
+    --color-accent-100: #fde9e2;
+    --color-accent-200: #fbccbb;
+    --color-accent-300: #ffab8d;
+    --color-accent-400: #ff713d;
+    --color-accent-500: #ff4400;
+    --color-accent-600: #d63900;
+    --color-accent-700: #ad2e00;
+    --color-accent-800: #852300;
+    --color-accent-900: #5e1f08;
+    --color-accent-950: #3d1405;
+    --color-neutral-50: #f7f7f7;
+    --color-neutral-100: #f0f0f0;
+    --color-neutral-200: #dbdbdb;
+    --color-neutral-300: #c2c2c2;
+    --color-neutral-400: #9e9e9e;
+    --color-neutral-500: #808080;
+    --color-neutral-600: #6b6b6b;
+    --color-neutral-700: #575757;
+    --color-neutral-800: #424242;
+    --color-neutral-900: #333333;
+    --color-neutral-950: #000000;
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+
+    /* Font */
+    --font-size-xs: 0.588rem;
+    --font-size-sm: 0.85rem;
+    --font-size-base: 1.0625rem;
+    --font-size-lg: 1.411rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2.38rem;
+    --font-size-3xl: 3.5rem;
+    --font-size-4xl: 4.25rem;
+
+    /* Space */
+    --spacing-0: 0;
+    --spacing-1: 0.125rem;
+    --spacing-2: 0.375rem;
+    --spacing-3: 0.75rem;
+    --spacing-5: 1.25rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-39: 9.75rem;
+
+    /* Radius */
+    --radius-none: 0;
+    --radius-sm: 1.125rem;
+    --radius-md: 1.25rem;
+    --radius-lg: 1.4806rem;
+    --radius-xl: 8.25rem;
+    --radius-2xl: 51.0519rem;
+    --radius-full: 9999px;
+
+    /* Shadow */
+    --shadow-sm:
+        rgb(248, 250, 247) 0px 0px 30px 0px,
+        rgb(248, 250, 247) 0px 0px 30px 0px,
+        rgb(248, 250, 247) 0px 0px 30px 0px,
+        rgb(248, 250, 247) 0px 0px 30px 0px,
+        rgb(248, 250, 247) 0px 0px 30px 0px,
+        rgb(248, 250, 247) 0px 0px 30px 0px,
+        rgb(248, 250, 247) 0px 0px 30px 0px, rgb(248, 250, 247) 0px 0px 30px 0px;
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+    /* Gradients */
+    --gradient-brand-1: linear-gradient(
+        rgb(248, 250, 247) 0%,
+        rgba(248, 250, 247, 0) 100%
+    );
+    --gradient-brand-2: linear-gradient(
+        90deg,
+        rgb(84, 65, 69) 0%,
+        rgb(118, 110, 112) 88%
+    );
+    --gradient-brand-3: linear-gradient(
+        0deg,
+        rgb(240, 242, 239) 0%,
+        rgba(240, 242, 239, 0) 100%
+    );
+}
