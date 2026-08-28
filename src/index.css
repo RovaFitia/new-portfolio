@@ -10,9 +10,9 @@
     body {
         font-family: var(--font-haffer-md);
         font-size: var(--font-size-base);
-        font-weight: 500;
-        line-height: 23.8px;
+        line-height: 1,4875rem;
         letter-spacing: normal;
-
+        color: var(--color-text);
+        background-color: var(--color-paper);
     }
 }

@@ -56,6 +56,11 @@
     --color-warning: #f59e0b;
     --color-error: #ef4444;
 
+    /* Custom color */
+    --color-text: #2a0f14;
+    --color-line: #dfe0de;
+    --color-paper: #f8faf7;
+
     /* Font */
     --font-size-xs: 0.588rem;
     --font-size-sm: 0.85rem;
