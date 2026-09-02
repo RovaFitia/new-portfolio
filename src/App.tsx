@@ -43,20 +43,6 @@ function App() {
                     animi soluta pariatur, ipsum facilis explicabo quisquam
                     aliquam porro reiciendis error debitis non enim illum.
                 </Typography>
-                {/*<div className="flex flex-wrap md:flex-nowrap items-center mt-5 gap-4 ">
-                    <Button size="lg" href="https://facebook.com" icon>
-                        Book a demo
-                    </Button>
-                    <Button variant="ghost" size="lg">
-                        Book a demo
-                    </Button>
-                    <Button variant="super" size="lg">
-                        Book a demo
-                    </Button>
-                    <Button icon>Book a demo</Button>
-                    <Button variant="ghost">Book a demo</Button>
-                    <Button variant="super">Book a demo</Button>
-                </div>*/}
             </Container>
 
             <Footer />
