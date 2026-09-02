@@ -4,6 +4,7 @@ import { Typography } from "../../ui/Typography";
 import Copyright from "./Copyright";
 import PhysicsBadges from "@/components/ui/PhysicsBadges";
 import Logo from "@/components/ui/Logo";
+import { Vector } from "@/data";
 
 export default function Footer(): JSX.Element {
 
@@ -16,8 +17,8 @@ export default function Footer(): JSX.Element {
                         {/* Colonne Gauche : Logo + Pastilles */}
                         <div className="relative flex flex-col justify-between border-b border-line min-h-70 lg:col-span-7 lg:border-b-0 lg:border-r">
                             {/* Logo Teak / CodeurMDG */}
-                            <div className="p-8">
-                                <Logo />
+                            <div className="">
+                                <img alt={Vector.alt} loading="lazy" width="200" decoding="async" data-nimg="1" src={Vector.image} />
                             </div>
 
                             {/* Rangée de pastilles géométriques */}
