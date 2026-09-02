@@ -1,17 +1,32 @@
 import { Container } from "@/components/container/Container";
-import Button from "@/components/ui/Button";
 import { Typography } from "@/components/ui/Typography";
+import Footer from "./components/navigation/footer/Footer";
+import Navbar from "./components/navigation/Navbar";
 
 function App() {
     return (
-        <div>
+        <>
+            <Navbar/>
             <Container className="mt-5 flex flex-col gap-4">
-                <Typography variant="display" component="h1">The retention engine</Typography>
-                <Typography variant="h1" component="h1">The retention engine</Typography>
-                <Typography variant="h2" component="h2">The retention engine</Typography>
-                <Typography variant="h3" component="h3">The retention engine</Typography>
-                <Typography variant="h4" component="h4">The retention engine</Typography>
-                <Typography variant="body" component="p">The retention engine</Typography>
+
+                <Typography variant="display" component="h1">
+                    The retention engine
+                </Typography>
+                <Typography variant="h1" component="h1">
+                    The retention engine
+                </Typography>
+                <Typography variant="h2" component="h2">
+                    The retention engine
+                </Typography>
+                <Typography variant="h3" component="h3">
+                    The retention engine
+                </Typography>
+                <Typography variant="h4" component="h4">
+                    The retention engine
+                </Typography>
+                <Typography variant="body" component="p">
+                    The retention engine
+                </Typography>
                 <Typography variant="lead">The retention engine</Typography>
                 <Typography variant="body" component="p">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -28,16 +43,24 @@ function App() {
                     animi soluta pariatur, ipsum facilis explicabo quisquam
                     aliquam porro reiciendis error debitis non enim illum.
                 </Typography>
-                <div className="flex items-center mt-5 gap-4">
-                    <Button size="lg" href="https://facebook.com" icon>Book a demo</Button>
-                    <Button variant="ghost" size="lg">Book a demo</Button>
-                    <Button variant="super" size="lg">Book a demo</Button>
-                    <Button icon >Book a demo</Button>
+                {/*<div className="flex flex-wrap md:flex-nowrap items-center mt-5 gap-4 ">
+                    <Button size="lg" href="https://facebook.com" icon>
+                        Book a demo
+                    </Button>
+                    <Button variant="ghost" size="lg">
+                        Book a demo
+                    </Button>
+                    <Button variant="super" size="lg">
+                        Book a demo
+                    </Button>
+                    <Button icon>Book a demo</Button>
                     <Button variant="ghost">Book a demo</Button>
                     <Button variant="super">Book a demo</Button>
-                </div>
+                </div>*/}
             </Container>
-        </div>
+
+            <Footer />
+        </>
     );
 }
 

@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 import { ChevronRight } from "lucide-react";
 import type { ButtonProps } from "@/types/Button";
 
-const Button = ({ variant = 'solid', size = 'md', className, href, children, icon = false }: ButtonProps) => {
+const Button = ({ variant = 'solid', size = 'md', className, href, children, icon = false  }: ButtonProps) => {
     const sizes = {
         md: 'px-5 py-[8px] h-[40px] text-[14px] tracking-[0.03rem]',
         lg: 'font-solar-md h-[58px] px-[42px] py-[17px] text-[24px]',
