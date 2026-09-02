@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { JSX } from "react";
 import { Container } from "@/components/container/Container";
 import Button from "../ui/Button";
+import Logo from "../ui/Logo";
 
 export default function Navbar(): JSX.Element {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -23,13 +24,14 @@ export default function Navbar(): JSX.Element {
                     aria-label="Main Navigation"
                 >
                     {/* Logo */}
-                    <a
+                    {/*<a
                         href="#"
                         className="flex items-center gap-2.5 font-semibold text-text transition-opacity hover:opacity-90"
                     >
                         <span className="h-6 w-6 rounded-md bg-text" />
                         <span>CodeurMDG</span>
-                    </a>
+                    </a>*/}
+                    <Logo />
 
                     {/* Navigation Desktop */}
                     <div className="hidden items-center gap-8 text-sm font-medium text-text/80 md:flex">
@@ -94,7 +96,7 @@ export default function Navbar(): JSX.Element {
                     }`}
                 >
                     <div className="overflow-hidden px-6">
-                        <div className="flex flex-col gap-4 py-5 text-base font-medium text-text/80">
+                        <div className="flex flex-col gap-4 py-5 text-base font-medium text-text">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}

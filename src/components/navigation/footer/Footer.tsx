@@ -3,6 +3,7 @@ import { Container } from "../../container/Container";
 import { Typography } from "../../ui/Typography";
 import Copyright from "./Copyright";
 import PhysicsBadges from "@/components/ui/PhysicsBadges";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer(): JSX.Element {
 
@@ -16,19 +17,7 @@ export default function Footer(): JSX.Element {
                         <div className="relative flex flex-col justify-between border-b border-line min-h-70 lg:col-span-7 lg:border-b-0 lg:border-r">
                             {/* Logo Teak / CodeurMDG */}
                             <div className="p-8">
-                                <a
-                                    href="#"
-                                    className="inline-block text-text"
-                                    aria-label="Accueil"
-                                >
-                                    <svg
-                                        className="h-20 w-20 fill-current"
-                                        viewBox="0 0 100 100"
-                                    >
-                                        <circle cx="50" cy="20" r="11" />
-                                        <path d="M18 36 L38 36 L50 60 L62 36 L82 36 L62 66 L72 90 L56 90 L50 78 L44 90 L28 90 L38 66 Z" />
-                                    </svg>
-                                </a>
+                                <Logo />
                             </div>
 
                             {/* Rangée de pastilles géométriques */}
@@ -154,7 +143,6 @@ export default function Footer(): JSX.Element {
 
                     {/* Barre du bas (Copyright & Mentions) */}
                     <Copyright />
-
                 </div>
             </Container>
         </footer>
