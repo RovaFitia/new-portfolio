@@ -2,44 +2,9 @@ import type { JSX } from "react";
 import { Container } from "../../container/Container";
 import { Typography } from "../../ui/Typography";
 import Copyright from "./Copyright";
+import PhysicsBadges from "@/components/ui/PhysicsBadges";
 
 export default function Footer(): JSX.Element {
-
-
-    // Pastilles stylisées avec dégradés réels
-    const badgeIcons = [
-        {
-            bg: "from-blue-600 to-indigo-600",
-            shape: "◆",
-            text: "text-amber-200",
-        },
-        {
-            bg: "from-amber-300 to-yellow-400",
-            shape: "✚",
-            text: "text-purple-950",
-        },
-        {
-            bg: "from-pink-500 to-rose-500",
-            shape: "▮",
-            text: "text-emerald-950",
-        },
-        { bg: "from-sky-200 to-sky-400", shape: "●", text: "text-indigo-900" },
-        {
-            bg: "from-emerald-600 to-teal-800",
-            shape: "■",
-            text: "text-pink-300",
-        },
-        {
-            bg: "from-emerald-400 to-green-500",
-            shape: "⬢",
-            text: "text-amber-200",
-        },
-        {
-            bg: "from-orange-300 to-peach-400",
-            shape: "✿",
-            text: "text-rose-900",
-        },
-    ];
 
     return (
         <footer className="w-full bg-[#f9f9f7] text-text py-10">
@@ -48,9 +13,9 @@ export default function Footer(): JSX.Element {
                     {/* Grille Principale */}
                     <div className="grid grid-cols-1 lg:grid-cols-12">
                         {/* Colonne Gauche : Logo + Pastilles */}
-                        <div className="flex flex-col justify-between border-b border-line p-8 min-h-70 lg:col-span-7 lg:border-b-0 lg:border-r">
+                        <div className="relative flex flex-col justify-between border-b border-line min-h-70 lg:col-span-7 lg:border-b-0 lg:border-r">
                             {/* Logo Teak / CodeurMDG */}
-                            <div>
+                            <div className="p-8">
                                 <a
                                     href="#"
                                     className="inline-block text-text"
@@ -67,15 +32,8 @@ export default function Footer(): JSX.Element {
                             </div>
 
                             {/* Rangée de pastilles géométriques */}
-                            <div className="mt-12 flex flex-wrap items-center gap-2.5">
-                                {badgeIcons.map((badge, idx) => (
-                                    <div
-                                        key={idx}
-                                        className={`flex h-9 w-9 items-center justify-center rounded-full bg-linear-to-br ${badge.bg} ${badge.text} text-xs font-bold shadow-inner transition-transform hover:scale-110 cursor-pointer`}
-                                    >
-                                        <span>{badge.shape}</span>
-                                    </div>
-                                ))}
+                            <div className="w-full mt-12 flex flex-wrap items-center gap-2.5">
+                                <PhysicsBadges />
                             </div>
                         </div>
 
