@@ -5,10 +5,12 @@ type Badge = {
     size: number;
 };
 
-type Stat = {
-    value: string;
-    label: string;
+type KeyValuePair<K1 extends string, K2 extends string> = {
+  [K in K1 | K2]: string;
 };
+
+type Stat = KeyValuePair<'value', 'label'>;
+type NavLink = KeyValuePair<'name', 'href'>;
 
 const BADGES_DATA: Badge[] = [
     { label: "◆", bg: "#4f46e5", iconColor: "#fde68a", size: 40 }, // Violet / Losange
@@ -26,4 +28,11 @@ const STATS: Stat[] = [
   { value: "25", label: "Entreprises satisfaites" },
 ];
 
-export {BADGES_DATA, STATS};
+const NAV_LINKS: NavLink[] = [
+    { name: "Product", href: "#product" },
+    { name: "Solutions", href: "#solutions" },
+    { name: "Pricing", href: "#pricing" },
+    { name: "Docs", href: "#docs" },
+];
+
+export {BADGES_DATA, STATS, NAV_LINKS};

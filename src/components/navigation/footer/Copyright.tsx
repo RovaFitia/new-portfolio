@@ -1,4 +1,4 @@
-import type { JSX } from "react/jsx-runtime";
+import type { JSX } from "react";
 
 export default function Copyright(): JSX.Element {
     const currentYear = new Date().getFullYear();

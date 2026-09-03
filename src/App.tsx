@@ -1,5 +1,5 @@
 import Footer from "@/components/navigation/footer/Footer";
-import Navbar from "@/components/navigation/Navbar";
+import Navbar from "@/components/navigation/navbar/Navbar";
 import Hero from "@/components/section/hero/Hero";
 
 function App() {

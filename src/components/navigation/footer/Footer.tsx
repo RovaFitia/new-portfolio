@@ -3,7 +3,6 @@ import { Container } from "../../container/Container";
 import { Typography } from "../../ui/Typography";
 import Copyright from "./Copyright";
 import PhysicsBadges from "@/components/ui/PhysicsBadges";
-import Logo from "@/components/ui/Logo";
 import { Vector } from "@/data";
 
 export default function Footer(): JSX.Element {
