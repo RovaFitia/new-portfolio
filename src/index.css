@@ -86,4 +86,10 @@
         box-shadow: 0 0 0 5px #734b002e, 0 0 22px #a89005;
         border-radius: 50%;
     }
+
+    @media (max-width: 596px) {
+        .hero {
+            padding-top: 4rem;
+        }
+    }
 }

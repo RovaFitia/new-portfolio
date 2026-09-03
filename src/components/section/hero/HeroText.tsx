@@ -6,7 +6,7 @@ export default function HeroText() {
             <Typography
                 variant="h1"
                 component="h1"
-                className="font-pixel text-[clamp(58px,7.4vw+106.56px,118px)] tracking-[-0.06em] leading-[.9] flex flex-col"
+                className="font-pixel text-[clamp(48px, 16vw, 72px)] lg:text-[clamp(58px,7.4vw+106.56px,118px)] tracking-[-0.06em] leading-[.9] flex flex-col"
             >
                 <span>Un site web</span>
                 <span className="text-primary-600">
