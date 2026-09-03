@@ -5,6 +5,11 @@ type Badge = {
     size: number;
 };
 
+type Stat = {
+    value: string;
+    label: string;
+};
+
 const BADGES_DATA: Badge[] = [
     { label: "◆", bg: "#4f46e5", iconColor: "#fde68a", size: 40 }, // Violet / Losange
     { label: "✚", bg: "#facc15", iconColor: "#3b0764", size: 40 }, // Jaune / Croix
@@ -15,5 +20,10 @@ const BADGES_DATA: Badge[] = [
     { label: "✿", bg: "#fdba74", iconColor: "#881337", size: 40 }, // Orange / Fleur
 ];
 
+const STATS: Stat[] = [
+  { value: "5", label: "Ans d'expérience" },
+  { value: "50", label: "Projets réalisés" },
+  { value: "25", label: "Entreprises satisfaites" },
+];
 
-export {BADGES_DATA};
+export {BADGES_DATA, STATS};
