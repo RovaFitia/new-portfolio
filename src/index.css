@@ -73,6 +73,10 @@
         transform: translate(-50%);
     }
 
+    .hero-accent {
+        text-shadow: 0 0 50px #caff3d1f!important;
+    }
+
     .eyebrow {
         color: #545950;
         letter-spacing: .09em;
