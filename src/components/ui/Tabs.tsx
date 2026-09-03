@@ -27,7 +27,7 @@ export default function Tabs() {
                         <button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
-                            className={`flex-1 py-3 px-4 md:px-10 font-solar-md transition-all duration-200 border-t border-s border-e min-w-22.5 shrink-0 cursor-pointer ${
+                            className={`flex-1 py-3 px-4 md:px-10 font-solar-md transition-all duration-200 border-t border-s border-e min-w-22.5 shrink-0 cursor-pointer text-nowrap ${
                                 activeTab === tab.id
                                     ? "bg-text text-primary-400 border-line"
                                     : "text-muted-foreground hover:text-foreground border-transparent"
@@ -51,7 +51,7 @@ export default function Tabs() {
                     tab.id === activeTab ? (
                         <div
                             key={tab.id}
-                            className="space-y-3 text-center sm:text-left"
+                            className="space-y-3 text-center sm:text-left max-w-full w-full"
                         >
                             <Typography
                                 variant="h4"
@@ -63,7 +63,7 @@ export default function Tabs() {
                             <Typography
                                 variant="body"
                                 component="p"
-                                className="text-dark font-haffer-r text-balance"
+                                className="text-dark font-haffer-r text-pretty"
                             >
                                 {tab.content}
                             </Typography>
