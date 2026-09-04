@@ -1,4 +1,4 @@
-import { LogoCodeur, VectorWhite, VectorCodeur } from "@/assets/index";
+import { LogoCodeur, VectorWhite, VectorCodeur, ProfileCodeur } from "@/assets/index";
 
 export const Branding = {
     image: LogoCodeur,
@@ -13,4 +13,9 @@ export const Vector = {
 export const Codeur = {
     image: VectorCodeur,
     alt: "Codeur Black",
+};
+
+export const Profile = {
+    image: ProfileCodeur,
+    alt: "Codeur Profile",
 };
