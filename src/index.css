@@ -91,6 +91,10 @@
         border-radius: 50%;
     }
 
+    .image-mask {
+        mask: radial-gradient(100% 95% at 55% 15%, rgb(0, 0, 0) 44.7477%, rgba(0, 0, 0, 0) 100%);
+    }
+
     @media (max-width: 596px) {
         .hero {
             padding-top: 4rem;
