@@ -354,6 +354,7 @@ export const HangingIdCard = ({
                                     <img
                                         src={profile.image}
                                         alt={profile.alt}
+                                        loading="lazy"
                                         className="w-full h-full object-top object-cover border border-line border-t-0"
                                     />
                                 )}

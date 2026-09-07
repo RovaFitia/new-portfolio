@@ -1,3 +1,4 @@
+import { CJE, GenerationMada, MonPoleFormation, NousGerons } from "@/assets";
 import { ServiceImage } from "./index"; // ServiceImage est un objet { image: string, alt: string }
 
 type Service = {
@@ -19,8 +20,8 @@ const SERVICES: Service[] = [
     description: "Création de sites élégants, attractifs performantes et sécurisées.",
     tags: ["Vitrine", "E-commerce", "Refonte", "Maintenance"],
     image: {
-      path: ServiceImage.image,
-      alt: ServiceImage.alt,
+      path: CJE,
+      alt: "CJE Quebec",
     },
     layout: "full",
   },
@@ -30,8 +31,8 @@ const SERVICES: Service[] = [
     description: "Développement sur mesure moderne et unique. Chaque projet est pensé pour être évolutif, performant et parfaitement aligné avec vos objectifs.",
     tags: ["Creation Plugin", "Creation Theme", "Creative Design", "Design Pixel Perfect"],
     image: {
-      path: ServiceImage.image,
-      alt: ServiceImage.alt,
+      path: NousGerons,
+      alt: "Nousgerons",
     },
     layout: "half",
   },
@@ -41,8 +42,8 @@ const SERVICES: Service[] = [
     description: "Un service pensé pour garantir stabilité, sécurité et performance, afin d’offrir une expérience fluide aux utilisateurs.",
     tags: ["Maintenance", "Performance", "Sécurisation"],
     image: {
-      path: ServiceImage.image,
-      alt: ServiceImage.alt,
+      path: MonPoleFormation,
+      alt: "Mon pole formation",
     },
     layout: "half",
   },
@@ -52,8 +53,8 @@ const SERVICES: Service[] = [
     description: "Optimisation de sites web, de contenus et de la performance globale.",
     tags: ["SEO", "Visibilité", "Responsive", "Performance"],
     image: {
-      path: ServiceImage.image,
-      alt: ServiceImage.alt,
+      path: GenerationMada,
+      alt: "Generation Mada",
     },
     layout: "full",
   },

@@ -36,12 +36,16 @@ export default function ServiceCard() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="max-w-full md:max-w-1/2 h-100 overflow-hidden image-mask relative">
-                                <img
-                                    src={service.image.path}
-                                    alt={service.image.alt}
-                                    className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
-                                />
+                            <div className="max-w-full md:max-w-1/2 image-mask relative p-2 border border-line">
+                                <svg className="z-[-1] absolute inset-0 size-full pointer-events-none select-none text-line"><defs><pattern id=":R5taafknq6ja:" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="1.5"></line></pattern></defs><rect width="100%" height="100%" fill="url(#:R5taafknq6ja:)"></rect></svg>
+                                <div className="h-100 overflow-hidden">
+                                    <img
+                                        src={service.image.path}
+                                        alt={service.image.alt}
+                                        loading="lazy"
+                                        className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
+                                    />
+                                </div>
                             </div>
                         </div>
                     );
@@ -53,7 +57,7 @@ export default function ServiceCard() {
                         (service, index) => (
                             <div
                                 key={service.id}
-                                className={`group min-h-110 p-6 md:p-10 w-full md:w-1/2 ${
+                                className={`group min-h-110 p-6 md:p-10 w-full md:w-1/2 flex flex-col justify-between ${
                                     index === 0
                                         ? "border-b border-e-0 md:border-b-0 md:border-e border-line"
                                         : ""
@@ -85,12 +89,16 @@ export default function ServiceCard() {
                                         ))}
                                     </div>
                                 </div>
-                                <div className="max-w-full mt-10 h-100 overflow-hidden image-mask relative">
-                                    <img
-                                        src={service.image.path}
-                                        alt={service.image.alt}
-                                        className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
-                                    />
+                                <div className="max-w-full mt-10 image-mask relative p-2 border border-line">
+                                    <svg className="z-[-1] absolute inset-0 size-full pointer-events-none select-none text-line"><defs><pattern id=":R5taafknq6ja:" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="1.5"></line></pattern></defs><rect width="100%" height="100%" fill="url(#:R5taafknq6ja:)"></rect></svg>
+                                    <div className="h-100 overflow-hidden">
+                                        <img
+                                            src={service.image.path}
+                                            alt={service.image.alt}
+                                            loading="lazy"
+                                            className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         ),
@@ -128,12 +136,16 @@ export default function ServiceCard() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="max-w-full md:max-w-1/2 h-100 overflow-hidden image-mask relative">
-                                <img
-                                    src={service.image.path}
-                                    alt={service.image.alt}
-                                    className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
-                                />
+                            <div className="max-w-full md:max-w-1/2 image-mask relative p-2 border border-line">
+                                <svg className="z-[-1] absolute inset-0 size-full pointer-events-none select-none text-line"><defs><pattern id=":R5taafknq6ja:" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="1.5"></line></pattern></defs><rect width="100%" height="100%" fill="url(#:R5taafknq6ja:)"></rect></svg>
+                                <div className="h-100 overflow-hidden">
+                                    <img
+                                        src={service.image.path}
+                                        alt={service.image.alt}
+                                        loading="lazy"
+                                        className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
+                                    />
+                                </div>
                             </div>
                         </div>
                     );
