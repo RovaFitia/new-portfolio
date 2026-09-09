@@ -1,5 +1,4 @@
 import { CJE, GenerationMada, MonPoleFormation, NousGerons } from "@/assets";
-import { ServiceImage } from "./index"; // ServiceImage est un objet { image: string, alt: string }
 
 type Service = {
   id: string;

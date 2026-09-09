@@ -1,0 +1,133 @@
+import {
+    AlfredWeb,
+    AlouerWeb,
+    AmberwoodWeb,
+    AsecWeb,
+    AttitudeWeb,
+    CentreDuSudWeb,
+    CJEWeb,
+    CliniqueWeb,
+    EuroProWeb,
+    MonPoleFormationWeb,
+    NousgeronsWeb,
+    ProcleanWeb,
+    StudioWeb,
+    TraiteurWeb,
+    TravauxWeb,
+    VentiaireWeb,
+    VirtuarchiWeb,
+    ZazakelyWeb,
+} from "@/assets";
+
+const PROJECTS = [
+    {
+        id: 1,
+        title: "Le Guide du Centre-Sud",
+        image: CentreDuSudWeb,
+        link: "https://guidecentresud.org/",
+    },
+    {
+        id: 2,
+        title: "Attitude Hélicoptère",
+        image: AttitudeWeb,
+        link: "https://attitudehelicoptere.ca/",
+    },
+    {
+        id: 3,
+        title: "Studios à Louer",
+        image: StudioWeb,
+        link: "https://studiosalouer.ca/",
+    },
+    {
+        id: 4,
+        title: "Venti Air",
+        image: VentiaireWeb,
+        link: "https://ventiair.ca/",
+    },
+    {
+        id: 5,
+        title: "Alfred Conciergerie",
+        image: AlfredWeb,
+        link: "http://alfred-conciergerie.fr/",
+    },
+    {
+        id: 6,
+        title: "Virtuarchi",
+        image: VirtuarchiWeb,
+        link: "https://virtuarchi.fr/",
+    },
+    {
+        id: 7,
+        title: "À Louer À",
+        image: AlouerWeb,
+        link: "https://alouera.ca/",
+    },
+    {
+        id: 8,
+        title: "Amberwood Estate",
+        image: AmberwoodWeb,
+        link: "https://amberwoodestate.com/",
+    },
+    {
+        id: 9,
+        title: "ASEC",
+        image: AsecWeb,
+        link: "http://www.asec.pilondesign.com/",
+    },
+    {
+        id: 10,
+        title: "Nous Gerons",
+        image: NousgeronsWeb,
+        link: "https://www.nousgerons.com/",
+    },
+    {
+        id: 11,
+        title: "ProClean",
+        image: ProcleanWeb,
+        link: "https://traitementsproclean.com/",
+    },
+    {
+        id: 12,
+        title: "Mon Pôle Formation",
+        image: MonPoleFormationWeb,
+        link: "https://monpoleformation.fr/",
+    },
+    {
+        id: 13,
+        title: "CJE Montréal",
+        image: CJEWeb,
+        link: "https://cjemontreal.org/",
+    },
+    {
+        id: 14,
+        title: "Génération Mada",
+        image: ZazakelyWeb,
+        link: "https://generationmada.org/",
+    },
+    {
+        id: 15,
+        title: "Clinique AP Brault",
+        image: CliniqueWeb,
+        link: "https://cliniqueapbrault.com/",
+    },
+    {
+        id: 16,
+        title: "Traiteur La Grâce",
+        image: TraiteurWeb,
+        link: "https://traiteurlagrace.com/",
+    },
+    {
+        id: 17,
+        title: "Travaux Côte-Nord",
+        image: TravauxWeb,
+        link: "https://travauxcotenord.com/",
+    },
+    {
+        id: 18,
+        title: "Euro Pro Diesel",
+        image: EuroProWeb,
+        link: "https://beige-flamingo-364298.hostingersite.com/",
+    },
+];
+
+export default PROJECTS;
