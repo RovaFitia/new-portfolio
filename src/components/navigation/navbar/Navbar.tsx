@@ -8,6 +8,7 @@ import Hamburger from "./Hamburger";
 import NavMobile from "./NavMobile";
 
 import { NAV_LINKS } from "@/data/data";
+import { scrollToSection } from "@/utils/scrollToSection";
 
 export default function Navbar(): JSX.Element {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -41,6 +42,7 @@ export default function Navbar(): JSX.Element {
                             <a
                                 key={link.name}
                                 href={link.href}
+                                onClick={(e) => scrollToSection(e, link.href)}
                                 className="transition-colors hover:text-text"
                             >
                                 {link.name}
@@ -50,7 +52,7 @@ export default function Navbar(): JSX.Element {
 
                     {/* CTA Desktop */}
                     <div className="hidden items-center gap-3 md:flex">
-                        <Button variant="solid" size="md" href="#cta">
+                        <Button variant="solid" size="md" onClick={(e) => scrollToSection(e, "#cta")}>
                             Contactez-moi
                         </Button>
                     </div>

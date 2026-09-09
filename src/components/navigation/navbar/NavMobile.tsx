@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 
 import type { JSX } from "react";
+import { scrollToSection } from "@/utils/scrollToSection";
 type NavMobileProps = {
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
@@ -23,7 +24,8 @@ export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.El
                         <a
                             key={link.name}
                             href={link.href}
-                            onClick={() => setIsOpen(false)}
+                            // onClick={() => setIsOpen(false)}
+                            onClick={(e) => { setIsOpen(false); scrollToSection(e, link.href)}}
                             className="flex items-center justify-between px-5 py-3 border-b border-b-line/70 transition-colors hover:text-primary-400 font-haffer-r hover:bg-text"
                         >
                             {link.name}
@@ -37,7 +39,7 @@ export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.El
                             variant="solid"
                             size="md"
                             className="w-full justify-center"
-                            onClick={() => setIsOpen(false)}
+                            onClick={(e) => { setIsOpen(false); scrollToSection(e, "#cta")}}
                         >
                             Contactez-moi
                         </Button>

@@ -15,7 +15,7 @@ export const FOOTER_SECTIONS: FooterSection[] = [
         title: "App",
         containerClassName: "border-b border-line sm:border-r",
         links: [
-            { label: "À propos", href: "#about" },
+            { label: "À propos", href: "#apropos" },
             { label: "Services", href: "#services" },
             { label: "Portfolio", href: "#portfolio" },
             { label: "CTA", href: "#cta" },
