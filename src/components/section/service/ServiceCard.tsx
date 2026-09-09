@@ -8,10 +8,33 @@ export default function ServiceCard() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 1500);
-        return () => clearTimeout(timer);
+        let isMounted = true;
+
+        // Extraire toutes les URL d'images à partir du tableau SERVICES
+        const imageUrls = SERVICES.map((service) => service.image?.path).filter(
+            Boolean,
+        );
+
+        // Fonction pour précharger une image
+        const preloadImage = (src: string) => {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = resolve;
+                img.onerror = resolve; // En cas d'erreur, on débloque aussi pour éviter de bloquer l'UI
+            });
+        };
+
+        // Attendre que TOUTES les images soient chargées
+        Promise.all(imageUrls.map(preloadImage)).then(() => {
+            if (isMounted) {
+                setIsLoading(false);
+            }
+        });
+
+        return () => {
+            isMounted = false;
+        };
     }, []);
 
     return (
@@ -235,7 +258,7 @@ export default function ServiceCard() {
                                                 fill="url(#:R5taafknq6ja:)"
                                             ></rect>
                                         </svg>
-                                        <div className="h-100 overflow-hidden">
+                                        <div className="w-full h-100 overflow-hidden">
                                             <img
                                                 src={service.image.path}
                                                 alt={service.image.alt}
