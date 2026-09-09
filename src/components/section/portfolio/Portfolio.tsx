@@ -4,7 +4,7 @@ import ProjectsList from "./ProjectsList";
 
 export default function Portfolio() {
     return (
-        <div className="w-full h-auto py-24">
+        <div className="w-full h-auto pt-12 md:pt-20 lg:pt-28" id="portfolio">
             <Container>
                 <div className="flex flex-col gap-1.5">
                     <Typography
@@ -14,13 +14,13 @@ export default function Portfolio() {
                     >
                         // <span className="text-text">Portfolio</span>
                     </Typography>
-                    <Typography variant="h2" component="h2">
+                    <Typography variant="h2" component="h2" className="leading-none">
                         Mes réalisations témoignent
                     </Typography>
                     <Typography
                         variant="body"
                         component="p"
-                        className="font-haffer-r text-dark text-balance"
+                        className="font-haffer-r text-dark text-balance mt-2.5"
                     >
                         Mes réalisations couvrent une large variété de secteurs
                         à l'international. Chaque projet est conçu pour refléter

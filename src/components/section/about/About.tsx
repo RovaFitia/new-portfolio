@@ -6,7 +6,7 @@ import { Profile } from "@/data";
 
 export default function About() {
     return (
-        <section className="w-full h-auto py-24">
+        <section className="w-full h-auto pt-12 md:pt-0">
             <Container>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
                     <div className="flex flex-col gap-4 order-2 md:order-1">
@@ -18,11 +18,11 @@ export default function About() {
                             >
                                 // <span className="text-text">A propos</span>
                             </Typography>
-                            <Typography variant="h2" component="h2">
+                            <Typography variant="h2" component="h2" className="leading-none">
                                 Pourquoi me choisir ?
                             </Typography>
                         </div>
-                        <div className="max-w-2xl flex flex-col gap-4">
+                        <div className="max-w-2xl flex flex-col gap-4 mt-2.5">
                             <Typography
                                 variant="body"
                                 component="p"

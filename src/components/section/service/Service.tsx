@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 
 export default function Service() {
     return (
-        <div className="w-full h-auto py-24">
+        <div className="w-full h-auto pt-12 md:pt-20 lg:pt-28" id="services">
             <Container>
                 <div className="flex flex-col gap-1.5">
                     <Typography
@@ -14,13 +14,13 @@ export default function Service() {
                     >
                         // <span className="text-text">Services</span>
                     </Typography>
-                    <Typography variant="h2" component="h2">
+                    <Typography variant="h2" component="h2" className="leading-none">
                         Collaborons ensemble
                     </Typography>
                     <Typography
                         variant="body"
                         component="p"
-                        className="font-haffer-r text-dark text-balance"
+                        className="font-haffer-r text-dark text-balance mt-2.5"
                     >
                         Je conçois des solutions digitales sur mesure qui allient design moderne, performance technique et fiabilité, afin de renforcer la visibilité et la croissance de votre entreprise en ligne.
                     </Typography>

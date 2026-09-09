@@ -7,7 +7,7 @@ export const ProjectCardSkeleton: React.FC = () => {
             className="max-w-sm w-full rounded-xs border border-line bg-white p-0 shadow-sm animate-pulse"
         >
             {/* Zone Image Flowbite avec SVG placeholder */}
-            <div className="relative h-60 w-full p-2.5">
+            <div className="relative h-55 w-full p-2.5">
                 <div className="flex items-center justify-center h-full w-full rounded-s bg-gray-300">
                     <svg
                         className="w-10 h-10 text-gray-200"

@@ -33,6 +33,7 @@ export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.El
 
                     <div className="pt-5 px-5">
                         <Button
+                            href="#cta"
                             variant="solid"
                             size="md"
                             className="w-full justify-center"

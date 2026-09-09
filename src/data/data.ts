@@ -36,10 +36,9 @@ const STATS: Stat[] = [
 ];
 
 const NAV_LINKS: NavLink[] = [
-    { name: "Product", href: "#product" },
-    { name: "Solutions", href: "#solutions" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Docs", href: "#docs" },
+    { name: "À propos", href: "#apropos" },
+    { name: "Services", href: "#services" },
+    { name: "Portfolio", href: "#portfolio" },
 ];
 
 const TABS_DATA: Tab[] = [

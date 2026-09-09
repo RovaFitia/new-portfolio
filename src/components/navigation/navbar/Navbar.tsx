@@ -50,7 +50,7 @@ export default function Navbar(): JSX.Element {
 
                     {/* CTA Desktop */}
                     <div className="hidden items-center gap-3 md:flex">
-                        <Button variant="solid" size="md">
+                        <Button variant="solid" size="md" href="#cta">
                             Contactez-moi
                         </Button>
                     </div>

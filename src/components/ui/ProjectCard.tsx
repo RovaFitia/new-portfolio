@@ -23,7 +23,7 @@ export const ProjectCard: React.FC<CardProps> = ({
   return (
     <div className="max-w-sm relative rounded-xs border border-line bg-white shadow-sm transition-all hover:shadow-[6px_6px_0_#074dcf0f] hover:border-primary-500 cursor-pointer">
       {/* Conteneur de l'image / Skeleton */}
-      <div className="relative h-60 w-full overflow-hidden p-2.5">
+      <div className="relative h-55 w-full overflow-hidden p-2.5">
         {/* Motif SVG en arrière-plan */}
         <svg className="z-1 absolute inset-0 size-full pointer-events-none select-none text-line">
           <defs>
@@ -76,7 +76,7 @@ export const ProjectCard: React.FC<CardProps> = ({
                 loading="lazy"
                 onLoad={() => setIsLoaded(true)}
                 onError={() => setHasError(true)}
-                className={`h-full w-full object-cover shadow-md transition-opacity duration-300 ${
+                className={`h-full w-full shadow-md transition-opacity duration-300 ${
                   isLoaded ? "opacity-100" : "opacity-0 absolute inset-0"
                 }`}
               />
