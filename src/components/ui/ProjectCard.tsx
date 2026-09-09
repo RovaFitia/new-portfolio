@@ -74,6 +74,8 @@ export const ProjectCard: React.FC<CardProps> = ({
                             <img
                                 src={finalSrc}
                                 alt={imageAlt}
+                                width="362"
+                                height="200"
                                 loading="lazy"
                                 onLoad={() => setIsLoaded(true)}
                                 onError={() => setHasError(true)}
