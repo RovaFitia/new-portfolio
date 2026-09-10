@@ -109,8 +109,8 @@ export default function ServiceCard() {
                                             <img
                                                 src={service.image.path}
                                                 alt={service.image.alt}
-                                                width="362"
-                                                height="200"
+                                                width={service.image.width}
+                                                height={service.image.height}
                                                 loading="lazy"
                                                 className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
                                             />
@@ -190,8 +190,8 @@ export default function ServiceCard() {
                                                 <img
                                                     src={service.image.path}
                                                     alt={service.image.alt}
-                                                    width="545"
-                                                    height="400"
+                                                    width={service.image.width}
+                                                    height={service.image.height}
                                                     loading="lazy"
                                                     className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
                                                 />
@@ -266,8 +266,8 @@ export default function ServiceCard() {
                                             <img
                                                 src={service.image.path}
                                                 alt={service.image.alt}
-                                                width="545"
-                                                height="400"
+                                                width={service.image.width}
+                                                height={service.image.height}
                                                 loading="lazy"
                                                 className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
                                             />
