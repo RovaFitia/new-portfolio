@@ -7,6 +7,8 @@ type CardProps = {
     imageAlt?: string;
     title: string;
     href?: string;
+    width?: number;
+    height?: number;
 };
 
 export const ProjectCard: React.FC<CardProps> = ({
@@ -14,6 +16,8 @@ export const ProjectCard: React.FC<CardProps> = ({
     imageAlt = "Project image",
     title,
     href = "#",
+    width = 362,
+    height = 200,
 }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [hasError, setHasError] = useState(false);
@@ -74,8 +78,8 @@ export const ProjectCard: React.FC<CardProps> = ({
                             <img
                                 src={finalSrc}
                                 alt={imageAlt}
-                                width="362"
-                                height="200"
+                                width={width}
+                                height={height}
                                 loading="lazy"
                                 onLoad={() => setIsLoaded(true)}
                                 onError={() => setHasError(true)}

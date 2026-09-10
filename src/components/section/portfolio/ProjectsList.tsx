@@ -19,6 +19,8 @@ export default function ProjectsList() {
                         imageSrc={project.image}
                         title={project.title}
                         href={project.link}
+                        width={project.width}
+                        height={project.height}
                     />
                 ))}
             </div>
@@ -58,6 +60,8 @@ export default function ProjectsList() {
                                         imageSrc={project.image}
                                         title={project.title}
                                         href={project.link}
+                                        width={project.width}
+                                        height={project.height}
                                     />
                                 </div>
                             ))}
