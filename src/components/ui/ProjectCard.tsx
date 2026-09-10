@@ -16,8 +16,8 @@ export const ProjectCard: React.FC<CardProps> = ({
     imageAlt = "Project image",
     title,
     href = "#",
-    width = 362,
-    height = 200,
+    width,
+    height,
 }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [hasError, setHasError] = useState(false);
