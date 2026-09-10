@@ -6,6 +6,7 @@ import { ServiceCardSkeleton } from "@/components/ui/ServiceCardSkeleton";
 
 export default function ServiceCard() {
     const [isLoading, setIsLoading] = useState(true);
+    const [isTouched, setIsTouched] = useState(false);
 
     useEffect(() => {
         let isMounted = true;
@@ -112,7 +113,17 @@ export default function ServiceCard() {
                                                 width={service.image.width}
                                                 height={service.image.height}
                                                 loading="lazy"
-                                                className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
+                                                onTouchStart={() =>
+                                                    setIsTouched(true)
+                                                }
+                                                onTouchEnd={() =>
+                                                    setIsTouched(false)
+                                                }
+                                                className={`w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)] ${
+                                                    isTouched
+                                                        ? "-translate-y-[calc(100%-25rem)]"
+                                                        : "translate-y-0"
+                                                }`}
                                             />
                                         </div>
                                     </div>
@@ -191,9 +202,21 @@ export default function ServiceCard() {
                                                     src={service.image.path}
                                                     alt={service.image.alt}
                                                     width={service.image.width}
-                                                    height={service.image.height}
+                                                    height={
+                                                        service.image.height
+                                                    }
                                                     loading="lazy"
-                                                    className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
+                                                    onTouchStart={() =>
+                                                        setIsTouched(true)
+                                                    }
+                                                    onTouchEnd={() =>
+                                                        setIsTouched(false)
+                                                    }
+                                                    className={`w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)] ${
+                                                        isTouched
+                                                            ? "-translate-y-[calc(100%-25rem)]"
+                                                            : "translate-y-0"
+                                                    }`}
                                                 />
                                             </div>
                                         </div>
@@ -269,7 +292,17 @@ export default function ServiceCard() {
                                                 width={service.image.width}
                                                 height={service.image.height}
                                                 loading="lazy"
-                                                className="w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)]"
+                                                onTouchStart={() =>
+                                                    setIsTouched(true)
+                                                }
+                                                onTouchEnd={() =>
+                                                    setIsTouched(false)
+                                                }
+                                                className={`w-full object-cover transition-transform cursor-pointer duration-24000 ease-linear group-hover:-translate-y-[calc(100%-25rem)] ${
+                                                    isTouched
+                                                        ? "-translate-y-[calc(100%-25rem)]"
+                                                        : "translate-y-0"
+                                                }`}
                                             />
                                         </div>
                                     </div>
