@@ -17,7 +17,7 @@ export const MentionLegalePage: React.FC = () => {
                     >
                         ← Retour à l'accueil
                     </Link>
-                    <Typography variant="h1" component="h1" className="tracking-tight text-text mb-3">
+                    <Typography variant="h1" component="h1" className="tracking-tight leading-none text-text mb-4">
                         Mention légale
                     </Typography>
                     <p className="text-sm  text-dark tracking-tight">
