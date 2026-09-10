@@ -14,7 +14,7 @@ export default function Copyright(): JSX.Element {
                             behavior: "smooth",
                         });
                     }}
-                    className="text-neutral-500 hover:text-black flex items-center justify-center gap-2 cursor-pointer group bg-transparent border-0 p-0 font-inherit"
+                    className="text-zinc-600 hover:text-black flex items-center justify-center gap-2 cursor-pointer group bg-transparent border-0 p-0 font-inherit"
                 >
                     <span>Back to top</span>
                     <svg

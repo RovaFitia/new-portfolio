@@ -19,7 +19,7 @@ export const FooterLinks: React.FC = () => {
                         {section.title}
                     </Typography>
 
-                    <ul className="flex flex-col gap-2 font-mono text-xs text-neutral-700">
+                    <ul className="flex flex-col gap-2 font-mono text-xs text-neutral-600">
                         {section.links.map((link) => (
                             <li key={link.label}>
                                 {link.external ? (
@@ -27,7 +27,7 @@ export const FooterLinks: React.FC = () => {
                                         href={link.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
+                                        className="font-haffer-r text-sm text-zinc-600 hover:text-black inline-flex items-center gap-1"
                                     >
                                         <span>{link.label}</span>
                                         <span className="text-[10px]">↗</span>
@@ -38,14 +38,14 @@ export const FooterLinks: React.FC = () => {
                                         onClick={(e) =>
                                             scrollToSection(e, link.href)
                                         }
-                                        className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
+                                        className="font-haffer-r text-sm text-zinc-600 hover:text-black inline-flex items-center gap-1"
                                     >
                                         <span>{link.label}</span>
                                     </a>
                                 ) : (
                                     <Link
                                         to={link.href}
-                                        className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
+                                        className="font-haffer-r text-sm text-zinc-600 hover:text-black inline-flex items-center gap-1"
                                     >
                                         <span>{link.label}</span>
                                     </Link>

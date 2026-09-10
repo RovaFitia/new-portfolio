@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://codeurmdg.tech
+
+# Sitemaps
+Sitemap: https://codeurmdg.tech/sitemap.xml

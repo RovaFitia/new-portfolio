@@ -1,0 +1,23 @@
+# CodeurMDG - Freelance, expert en WordPress et développer front-end
+
+> CodeurMDG est un Freelanceur basé à Madagascar, spécialisée dans la création de site web unique, moderne, optimisé, et référencé SEO.
+
+## À propos
+- **Nom / Pseudonyme :** CodeurMDG
+- **Spécialités :** React, TypeScript, Tailwind CSS, WordPress, Design UX/UI, Intégration AI Workflows, SEO Web Apps.
+- **Site Web :** https://codeurmdg.tech
+
+## Core Technologies
+- **Front-end :** React 18+, TypeScript, Tailwind CSS, Next.js, HTML5, CSS3/Sass.
+- **CMS :** WordPress (Avada, Elementor, Divi, WPBakery, WooCommerce, création thèmes et plugins personnalisés).
+- **Tooling & AI :** Vite, Webpack, Git, AI-assisted coding, Supabase, Node.js, PHP, AI Workflows.
+
+## Services Proposés
+- Développement WordPress : Création de sites élégants, attractifs performantes et sécurisées.
+- Développement personnalisé : Développement sur mesure moderne et unique. Chaque projet est pensé pour être évolutif, performant et parfaitement aligné avec vos objectifs.
+- Maintenance et débogage : Un service pensé pour garantir stabilité, sécurité et performance, afin d’offrir une expérience fluide aux utilisateurs.
+- Optimisation web : Optimisation de sites web, de contenus et de la performance globale.
+
+## Contact & Liens
+- **Site Officiel :** https://codeurmdg.tech
+- **Sitemap :** https://codeurmdg.tech/sitemap.xml
