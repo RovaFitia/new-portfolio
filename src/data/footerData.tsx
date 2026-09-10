@@ -26,7 +26,7 @@ export const FOOTER_SECTIONS: FooterSection[] = [
         containerClassName: "border-b border-line",
         links: [
             { label: "FAQ", href: "#faq" },
-            { label: "Mentions légales", href: "#legal" },
+            { label: "Mentions légales", href: "mention-legales" },
         ],
     },
     {

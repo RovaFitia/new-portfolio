@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Typography } from "@/components/ui/Typography";
 import { FOOTER_SECTIONS } from "@/data/footerData";
 import { scrollToSection } from "@/utils/scrollToSection";
@@ -21,21 +22,34 @@ export const FooterLinks: React.FC = () => {
                     <ul className="flex flex-col gap-2 font-mono text-xs text-neutral-700">
                         {section.links.map((link) => (
                             <li key={link.label}>
-                              <a
-                                href={link.href}
-                                target={link.external ? "_blank" : undefined}
-                                rel={link.external ? "noreferrer" : undefined}
-                                onClick={(e) => {
-                                  // On n'active le scroll fluide QUE si ce n'est PAS un lien externe
-                                  if (!link.external) {
-                                    scrollToSection(e, link.href);
-                                  }
-                                }}
-                                className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
-                              >
-                                <span>{link.label}</span>
-                                {link.external && <span className="text-[10px]">↗</span>}
-                              </a>
+                                {link.external ? (
+                                    <a
+                                        href={link.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
+                                    >
+                                        <span>{link.label}</span>
+                                        <span className="text-[10px]">↗</span>
+                                    </a>
+                                ) : link.href.startsWith("#") ? (
+                                    <a
+                                        href={link.href}
+                                        onClick={(e) =>
+                                            scrollToSection(e, link.href)
+                                        }
+                                        className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
+                                    >
+                                        <span>{link.label}</span>
+                                    </a>
+                                ) : (
+                                    <Link
+                                        to={link.href}
+                                        className="font-haffer-r text-sm text-neutral-500 hover:text-black inline-flex items-center gap-1"
+                                    >
+                                        <span>{link.label}</span>
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>

@@ -1,23 +1,29 @@
-import Navbar from "@/components/navigation/navbar/Navbar";
-import Hero from "@/components/section/hero/Hero";
-import About from "@/components/section/about/About";
-import Service from "@/components/section/service/Service";
-import Footer from "@/components/navigation/footer/Footer";
-import Portfolio from "@/components/section/portfolio/Portfolio";
-import { CtaSection } from "./components/section/cta/CtaSection";
+import { Routes, Route } from "react-router-dom";
+
+// Pages
+import { LandingPage } from "@/pages/LandingPage";
+import { MentionLegalePage } from "@/pages/MentionLegalePage";
+import NotFoundPage from "@/pages/NotFoundPage";
+import MainLayout from "@/components/layout/MainLayout";
+
+// Composant Layout réutilisable pour inclure Header & Footer
+
 
 function App() {
     return (
-        <>
-            <Navbar/>
-            <Hero />
-            <div id="apropos" />
-            <About />
-            <Service />
-            <Portfolio />
-            <CtaSection />
-            <Footer />
-        </>
+        <Routes>
+            {/* Routes avec Navbar et Footer */}
+            <Route element={<MainLayout />}>
+                <Route path="/" element={<LandingPage />} />
+                <Route
+                    path="/mention-legales"
+                    element={<MentionLegalePage />}
+                />
+            </Route>
+
+            {/* Route autonome (Sans Navbar ni Footer) */}
+            <Route path="*" element={<NotFoundPage />} />
+        </Routes>
     );
 }
 
