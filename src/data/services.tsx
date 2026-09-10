@@ -6,6 +6,8 @@ type Service = {
     image: {
         path: string;
         alt: string;
+        width: number;
+        height: number;
     };
     layout: "full" | "half";
 };
@@ -20,6 +22,8 @@ const SERVICES: Service[] = [
         image: {
             path: "/images/services/CJE-2.webp",
             alt: "CJE Quebec",
+            width:2880,
+            height:11576,
         },
         layout: "full",
     },
@@ -37,6 +41,8 @@ const SERVICES: Service[] = [
         image: {
             path: "/images/services/nousgerons.webp",
             alt: "Nousgerons",
+            width: 2880,
+            height: 12326,
         },
         layout: "half",
     },
@@ -49,6 +55,8 @@ const SERVICES: Service[] = [
         image: {
             path: "/images/services/monpoleformation.webp",
             alt: "Mon pole formation",
+            width: 2880,
+            height: 12358,
         },
         layout: "half",
     },
@@ -61,6 +69,8 @@ const SERVICES: Service[] = [
         image: {
             path: "/images/services/generation-mada.webp",
             alt: "Generation Mada",
+            width: 2884,
+            height: 12442,
         },
         layout: "full",
     },
