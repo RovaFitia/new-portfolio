@@ -1,23 +1,23 @@
-# CodeurMDG - Freelance, expert en WordPress et développer front-end
+# CodeurMDG - Freelance, expert en WordPress et développeur front-end
 
-> CodeurMDG est un Freelanceur basé à Madagascar, spécialisée dans la création de site web unique, moderne, optimisé, et référencé SEO.
+> CodeurMDG est un Freelance basé à Madagascar, spécialisé dans la création de sites web uniques, modernes, optimisés et référencés SEO.
 
-## À propos
-- **Nom / Pseudonyme :** CodeurMDG
-- **Spécialités :** React, TypeScript, Tailwind CSS, WordPress, Design UX/UI, Intégration AI Workflows, SEO Web Apps.
-- **Site Web :** https://codeurmdg.tech
+## Sections de la Landing Page
 
-## Core Technologies
+- [Accueil](https://codeurmdg.tech/): Présentation de CodeurMDG, freelance basé à Madagascar spécialisé en sites uniques et optimisés.
+- [À propos](https://codeurmdg.tech/#apropos): Section à propos : parcours, compétences front-end (React, TypeScript) et expertise WordPress.
+- [Services](https://codeurmdg.tech/#services): Section services : développement WordPress, applications React/TypeScript sur-mesure, maintenance et optimisation web.
+- [Projets](https://codeurmdg.tech/#projets): Section portfolio : projets React, thèmes/plugins WordPress personnalisés et réalisations clients.
+- [Contact](https://codeurmdg.tech/#cta): Section contact : formulaire direct pour échanger sur vos projets ou demander un devis.
+
+## Core Technologies & Spécialités
+
 - **Front-end :** React 18+, TypeScript, Tailwind CSS, Next.js, HTML5, CSS3/Sass.
-- **CMS :** WordPress (Avada, Elementor, Divi, WPBakery, WooCommerce, création thèmes et plugins personnalisés).
+- **CMS :** WordPress (Avada, Elementor, Divi, WPBakery, WooCommerce, création de thèmes et plugins personnalisés).
 - **Tooling & AI :** Vite, Webpack, Git, AI-assisted coding, Supabase, Node.js, PHP, AI Workflows.
+- **Design & SEO :** Design UX/UI, Intégration AI Workflows, SEO Web Apps.
 
-## Services Proposés
-- Développement WordPress : Création de sites élégants, attractifs performantes et sécurisées.
-- Développement personnalisé : Développement sur mesure moderne et unique. Chaque projet est pensé pour être évolutif, performant et parfaitement aligné avec vos objectifs.
-- Maintenance et débogage : Un service pensé pour garantir stabilité, sécurité et performance, afin d’offrir une expérience fluide aux utilisateurs.
-- Optimisation web : Optimisation de sites web, de contenus et de la performance globale.
+## Liens et Ressources
 
-## Contact & Liens
-- **Site Officiel :** https://codeurmdg.tech
-- **Sitemap :** https://codeurmdg.tech/sitemap.xml
+- [Site Officiel](https://codeurmdg.tech/): Landing page officielle de CodeurMDG.
+- [Sitemap XML](https://codeurmdg.tech/sitemap.xml): Carte du site au format XML.
