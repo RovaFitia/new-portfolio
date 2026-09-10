@@ -56,7 +56,7 @@ export default function ServiceCard() {
                                     <div className="max-w-full md:max-w-1/2 flex flex-col gap-3 text-balance">
                                         <Typography
                                             variant="h3"
-                                            component="h4"
+                                            component="h3"
                                             className="font-haffer-sb tracking-[-0.1rem] text-text"
                                         >
                                             {service.title}
@@ -135,7 +135,7 @@ export default function ServiceCard() {
                                         <div className="w-full flex flex-col gap-3 text-balance">
                                             <Typography
                                                 variant="h3"
-                                                component="h4"
+                                                component="h3"
                                                 className="font-haffer-sb tracking-[-0.1rem] text-text"
                                             >
                                                 {service.title}
@@ -213,7 +213,7 @@ export default function ServiceCard() {
                                     <div className="max-w-full md:max-w-1/2 flex flex-col gap-3 text-balance">
                                         <Typography
                                             variant="h3"
-                                            component="h4"
+                                            component="h3"
                                             className="font-haffer-sb tracking-[-0.1rem] text-text"
                                         >
                                             {service.title}
