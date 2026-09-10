@@ -379,7 +379,7 @@ export const HangingIdCard = ({
                                 <p className="font-solar-md uppercase text-text text-center leading-tight">
                                     {name}
                                 </p>
-                                <p className="text-[12px] text-neutral-500 font-haffer-r">
+                                <p className="text-[12px] text-zinc-700 font-haffer-r">
                                     {role}
                                 </p>
 
@@ -402,7 +402,7 @@ export const HangingIdCard = ({
                                     ))}
                                 </div>
 
-                                <p className="text-[10px] font-mono font-bold tracking-widest mt-0.5 text-success">
+                                <p className="text-[10px] font-mono font-bold tracking-widest mt-0.5 text-emerald-800">
                                     {badgeId}
                                 </p>
 
