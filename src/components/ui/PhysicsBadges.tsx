@@ -113,7 +113,7 @@ export default function PhysicsBadges() {
             Matter.Events.on(render as Matter.Render, "afterRender", () => {
                 if (!render) return;
                 const context = render.context;
-                context.font = "bold 32px sans-serif";
+                context.font = "900 36px sans-serif";
                 context.textAlign = "center";
                 context.textBaseline = "middle";
 

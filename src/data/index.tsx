@@ -1,16 +1,24 @@
-import { LogoCodeur, VectorWhite, VectorCodeur } from "@/assets/index";
-
 export const Branding = {
-    image: LogoCodeur,
+    image: "/images/logo/codeur-logo.webp",
     alt: "Logo Codeur",
 };
 
 export const Vector = {
-    image: VectorWhite,
+    image: "/images/vector-white.webp",
     alt: "Codeur Black",
 };
 
 export const Codeur = {
-    image: VectorCodeur,
+    image: "/images/codeur.webp",
     alt: "Codeur Black",
+};
+
+export const Profile = {
+    image: "/images/profile/profile.webp",
+    alt: "Codeur Profile",
+};
+
+export const ServiceImage = {
+    image: "/images/services/services.png",
+    alt: "Service",
 };

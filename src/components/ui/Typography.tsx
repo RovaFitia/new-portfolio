@@ -31,7 +31,7 @@ export const Typography = ({ variant = 'h2', component: Component = "div", theme
             break;
 
         case "body":
-            variantStyle = "text-[17px]"
+            variantStyle = "text-[17px] leading-[140%]"
             break;
     }
 
