@@ -61,7 +61,7 @@ export const TrustindexWidget: React.FC<TrustindexWidgetProps> = ({
 
     return (
         <section className={`w-full mt-10 ${className}`}>
-            <div className="relative min-h-50 overflow-x-auto">
+            <div className="relative min-h-50 overflow-x-hidden">
 
                 {isLoading && (
                     <div className="absolute inset-0 z-10 transition-opacity duration-300">
