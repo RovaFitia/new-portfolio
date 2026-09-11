@@ -2,6 +2,7 @@ import { Container } from "@/components/container/Container";
 import { Typography } from "@/components/ui/Typography";
 import ServiceCard from "./ServiceCard";
 import Button from "@/components/ui/Button";
+import { scrollToSection } from "@/utils/scrollToSection";
 
 export default function Service() {
     return (
@@ -28,11 +29,11 @@ export default function Service() {
                         <Typography
                             variant="body"
                             component="p"
-                            className="font-haffer-r text-dark text-balance mt-2.5"
+                            className="font-haffer-r text-dark text-pretty md:text-balance mt-2.5"
                         >
                            Je conçois et développe des solutions digitales sur mesure adaptées à chaque besoin.
                         </Typography>
-                        <Button variant="super" className="w-fit group">
+                        <Button variant="super" className="w-fit group" onClick={(e) => scrollToSection(e, "#cta")}>
                             Collaborer avec moi
                             <svg
                                 className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
