@@ -5,6 +5,8 @@ import Service from "@/components/section/service/Service";
 import Portfolio from "@/components/section/portfolio/Portfolio";
 import { CtaSection } from "@/components/section/cta/CtaSection";
 import { SEO } from "@/components/seo/SEO";
+import Reviews from "@/components/section/reviews/Reviews";
+
 
 export const LandingPage: React.FC = () => {
     return (
@@ -19,6 +21,7 @@ export const LandingPage: React.FC = () => {
                 <div id="apropos" />
                 <About />
                 <Service />
+                <Reviews />
                 <Portfolio />
                 <CtaSection />
             </main>
