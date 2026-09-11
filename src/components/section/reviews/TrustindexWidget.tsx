@@ -25,7 +25,6 @@ export const TrustindexWidget: React.FC<TrustindexWidgetProps> = ({
                 containerNode.children.length > 0 &&
                 containerNode.offsetHeight > 50
             ) {
-
                 setTimeout(() => {
                     setIsLoading(false);
                 }, 250);
@@ -44,10 +43,23 @@ export const TrustindexWidget: React.FC<TrustindexWidgetProps> = ({
         script.async = true;
         script.defer = true;
 
+        // Événement d'échec du chargement réseau (hors ligne, bloqueur de pub, CDN down)
+        script.onerror = () => {
+            setIsLoading(true); // Conserve le skeleton visible
+            observer.disconnect();
+        };
+
         containerNode.appendChild(script);
 
+        // Fallback de sécurité : si rien ne s'est passé après 8s (et pas d'erreur explicite),
+        // on conserve le Skeleton plutôt que d'afficher du vide.
         const fallbackTimer = setTimeout(() => {
-            setIsLoading(false);
+            if (
+                containerNode.children.length === 0 ||
+                containerNode.offsetHeight <= 50
+            ) {
+                setIsLoading(true); // Laisse le skeleton si le DOM n'a pas été construit
+            }
         }, 8000);
 
         return () => {
@@ -62,7 +74,6 @@ export const TrustindexWidget: React.FC<TrustindexWidgetProps> = ({
     return (
         <section className={`w-full mt-10 ${className}`}>
             <div className="relative min-h-50 overflow-x-hidden">
-
                 {isLoading && (
                     <div className="absolute inset-0 z-10 transition-opacity duration-300">
                         <ReviewsSkeleton />

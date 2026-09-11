@@ -19,7 +19,7 @@ export default function Service() {
                         <Typography
                             variant="h2"
                             component="h2"
-                            className="leading-none"
+                            className="leading-none text-balance"
                         >
                             Collaborons ensemble
                         </Typography>
