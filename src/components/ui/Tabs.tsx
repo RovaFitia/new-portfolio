@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ChevronRight } from "lucide-react";
 import { TABS_DATA } from "@/data/data";
 import { Typography } from "./Typography";
 
@@ -40,7 +39,20 @@ export default function Tabs() {
 
                 {canScrollRight && (
                     <div className="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center pr-1 bg-linear-to-l from-paper via-paper/80 to-transparent pl-6 sm:hidden text-muted-foreground transition-opacity duration-300">
-                        <ChevronRight size={18} className="w-4 h-4 animate-pulse" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18px"
+                            height="18px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            className="w-5 h-5 animate-wiggle"
+                        >
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
                     </div>
                 )}
             </div>

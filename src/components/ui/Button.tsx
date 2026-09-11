@@ -1,5 +1,4 @@
 import { cn } from "@/utils/cn";
-import { ChevronRight } from "lucide-react";
 import type { ButtonProps } from "@/types/Button";
 
 const Button = ({
@@ -8,7 +7,6 @@ const Button = ({
     className,
     href,
     children,
-    icon = false,
     onClick, // 1. On récupère onClick ici
 }: ButtonProps) => {
     const sizes = {
@@ -29,16 +27,13 @@ const Button = ({
         .join(" ");
     const Tag = href ? "a" : "button";
 
-    const iconSize = icon ? (size === "lg" ? 20 : 16) : "";
-    const isIcon = icon ? <ChevronRight size={iconSize} /> : null;
-
     return (
         <Tag
             href={href}
             onClick={onClick} // 2. On transmet onClick à l'élément HTML
             className={cn(classes, className)}
         >
-            {children} {isIcon}
+            {children}
         </Tag>
     );
 };

@@ -1,7 +1,5 @@
 import { NAV_LINKS } from "@/data/data";
 import Button from "@/components/ui/Button";
-import { ChevronRight } from "lucide-react";
-
 import type { JSX } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 type NavMobileProps = {
@@ -9,7 +7,10 @@ type NavMobileProps = {
     setIsOpen: (isOpen: boolean) => void;
 };
 
-export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.Element {
+export default function NavMobile({
+    isOpen,
+    setIsOpen,
+}: NavMobileProps): JSX.Element {
     return (
         <div
             className={`grid transition-all duration-300 ease-in-out md:hidden md:px-0 ${
@@ -24,12 +25,28 @@ export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.El
                         <a
                             key={link.name}
                             href={link.href}
-                            // onClick={() => setIsOpen(false)}
-                            onClick={(e) => { setIsOpen(false); scrollToSection(e, link.href)}}
+                            onClick={(e) => {
+                                setIsOpen(false);
+                                scrollToSection(e, link.href);
+                            }}
                             className="flex items-center justify-between px-5 py-3 border-b border-b-line/70 transition-colors hover:text-primary-400 font-haffer-r hover:bg-text"
                         >
                             {link.name}
-                            <ChevronRight size={16} className="text-neutral-500" />
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                text-neutral-500
+                            >
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
                         </a>
                     ))}
 
@@ -39,7 +56,10 @@ export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.El
                             variant="solid"
                             size="md"
                             className="w-full justify-center"
-                            onClick={(e) => { setIsOpen(false); scrollToSection(e, "#cta")}}
+                            onClick={(e) => {
+                                setIsOpen(false);
+                                scrollToSection(e, "#cta");
+                            }}
                         >
                             Contactez-moi
                         </Button>
@@ -47,5 +67,5 @@ export default function NavMobile({ isOpen, setIsOpen }: NavMobileProps): JSX.El
                 </div>
             </div>
         </div>
-    )
+    );
 }

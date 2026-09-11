@@ -1,5 +1,4 @@
 import React, { useState, useId } from "react";
-import { ArrowUpRight, ImageOff } from "lucide-react";
 import { Typography } from "./Typography";
 
 type CardProps = {
@@ -65,7 +64,24 @@ export const ProjectCard: React.FC<CardProps> = ({
                     {/* FALLBACK : Affiché si l'image échoue au chargement */}
                     {hasError ? (
                         <div className="size-full bg-gray-100 flex flex-col items-center justify-center gap-2 text-gray-400 rounded-s border border-dashed border-gray-300">
-                            <ImageOff className="size-6" />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                className="size-6"
+                            >
+                                <line x1="2" y1="2" x2="22" y2="22" />
+                                <path d="M10.41 10.41A2 2 0 0 0 12 14a2 2 0 0 0 1.59-.59" />
+                                <path d="M5 5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2" />
+                                <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                <line x1="2" y1="2" x2="22" y2="22" />
+                            </svg>
                             <span className="text-xs">Image indisponible</span>
                         </div>
                     ) : (
@@ -120,7 +136,22 @@ export const ProjectCard: React.FC<CardProps> = ({
                             rel="noopener noreferrer"
                             className="flex h-8 w-8 shrink-0 items-center justify-center text-xs rounded-full bg-dark/70 text-white transition-transform hover:scale-105 active:scale-95"
                         >
-                            <ArrowUpRight className="h-3 w-3 stroke-[2.5]" />
+                            {/*<ArrowUpRight className="h-3 w-3 stroke-[2.5]" />*/}
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                className="h-3 w-3 stroke-[2.5]"
+                            >
+                                <path d="M7 17L17 7" />
+                                <path d="M7 7h10v10" />
+                            </svg>
                         </a>
                     </>
                 )}
