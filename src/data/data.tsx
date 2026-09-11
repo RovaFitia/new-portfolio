@@ -40,6 +40,7 @@ const STATS: Stat[] = [
 const NAV_LINKS: NavLink[] = [
     { name: "À propos", href: "#apropos" },
     { name: "Services", href: "#services" },
+    { name: "Témoignages", href: "#reviews" },
     { name: "Portfolio", href: "#portfolio" },
 ];
 
