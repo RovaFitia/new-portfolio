@@ -6,9 +6,6 @@ import { MentionLegalePage } from "@/pages/MentionLegalePage";
 import NotFoundPage from "@/pages/NotFoundPage";
 import MainLayout from "@/components/layout/MainLayout";
 
-// Composant Layout réutilisable pour inclure Header & Footer
-
-
 function App() {
     return (
         <Routes>

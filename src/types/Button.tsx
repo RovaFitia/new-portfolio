@@ -6,7 +6,6 @@ type ButtonProps = {
     className?: string;
     children: React.ReactNode;
     href?: string;
-    icon?: boolean;
     onClick?: MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
 };
 
