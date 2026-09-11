@@ -13,7 +13,7 @@ export default function NavMobile({
 }: NavMobileProps): JSX.Element {
     return (
         <div
-            className={`grid transition-all duration-300 ease-in-out md:hidden md:px-0 ${
+            className={`grid transition-all duration-300 ease-in-out lg:hidden lg:px-0 ${
                 isOpen
                     ? "grid-rows-[1fr] opacity-100 border-t border-line"
                     : "grid-rows-[0fr] opacity-0"
@@ -40,10 +40,10 @@ export default function NavMobile({
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                text-neutral-500
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className=" text-neutral-500"
                             >
                                 <path d="m9 18 6-6-6-6" />
                             </svg>
