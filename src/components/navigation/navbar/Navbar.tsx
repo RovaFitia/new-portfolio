@@ -28,16 +28,16 @@ export default function Navbar(): JSX.Element {
     return (
         <header className={`sticky top-0 z-50 w-full border-b bg-paper/80 backdrop-blur-md transition-all
             ${isScrolled ? 'border-line' : 'border-transparent'}`}>
-            <Container className="px-0 md:px-10">
+            <Container className="px-0 lg:px-10">
                 <nav
-                    className="mx-auto flex max-w-6xl items-center justify-between py-3.5 px-5 md:px-0"
+                    className="mx-auto flex max-w-6xl items-center justify-between py-3.5 px-5 lg:px-0"
                     aria-label="Main Navigation"
                 >
                     {/* Logo */}
                     <Logo />
 
                     {/* Navigation Desktop */}
-                    <div className="hidden items-center gap-8 text-sm font-medium text-text/80 md:flex">
+                    <div className="hidden items-center gap-8 text-sm font-medium text-text/80 lg:flex">
                         {NAV_LINKS.map((link) => (
                             <a
                                 key={link.name}
@@ -51,7 +51,7 @@ export default function Navbar(): JSX.Element {
                     </div>
 
                     {/* CTA Desktop */}
-                    <div className="hidden items-center gap-3 md:flex">
+                    <div className="hidden items-center gap-3 lg:flex">
                         <Button variant="solid" size="md" onClick={(e) => scrollToSection(e, "#cta")}>
                             Contactez-moi
                         </Button>
