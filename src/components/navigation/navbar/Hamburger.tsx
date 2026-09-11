@@ -10,7 +10,7 @@ export default function Hamburger({ isOpen, toggleMenu }: HamburgerProps): JSX.E
       <button
           type="button"
           onClick={toggleMenu}
-          className="inline-flex items-center justify-center rounded-lg p-2 text-text hover:bg-line/40 focus:outline-none focus:ring-2 focus:ring-text/20 md:hidden"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-text hover:bg-line/40 focus:outline-none focus:ring-2 focus:ring-text/20 lg:hidden"
           aria-label={
               isOpen ? "Fermer le menu" : "Ouvrir le menu"
           }
