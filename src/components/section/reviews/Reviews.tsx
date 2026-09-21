@@ -1,6 +1,7 @@
 import { Container } from "@/components/container/Container";
 import { Typography } from "@/components/ui/Typography";
-import { TrustindexWidget } from "./TrustindexWidget";
+import ReviewsWidget from "./ReviewsWidget";
+
 
 export default function Reviews() {
     return (
@@ -27,7 +28,7 @@ export default function Reviews() {
                 </div>
 
                 {/* Reviews grid */}
-                <TrustindexWidget />
+                <ReviewsWidget />
             </Container>
         </div>
     );
