@@ -124,7 +124,7 @@ export const ReviewsWidget: React.FC<{ className?: string }> = ({
                                 <div>
                                     {/* En-tête */}
                                     <div className="flex items-center gap-3 mb-3">
-                                        <div className="relative shrink-0">
+                                        <div className="relative shrink-0 bg-gray-600 rounded-full">
                                             <img
                                                 src={review.author_image}
                                                 alt={review.author_title}
@@ -139,7 +139,7 @@ export const ReviewsWidget: React.FC<{ className?: string }> = ({
                                             <div className="flex items-center gap-1.5">
                                                 <Typography
                                                     variant="h4"
-                                                    component="h4"
+                                                    component="h3"
                                                     className="text-gray-800 text-sm truncate"
                                                 >
                                                     {review.author_title}
@@ -203,19 +203,24 @@ export const ReviewsWidget: React.FC<{ className?: string }> = ({
                     })}
                 </div>
 
-                {/* Dots de pagination */}
-                <div className="flex md:hidden justify-center items-center gap-2 mt-4 flex-wrap max-w-xs mx-auto">
+                {/* Dots de pagination (Mobile uniquement) */}
+                <div className="flex md:hidden justify-center items-center gap-1 mt-4 flex-wrap max-w-xs mx-auto">
                     {reviews.map((_, idx) => (
                         <button
                             key={idx}
                             onClick={() => scrollToIndex(idx)}
                             aria-label={`Voir l'avis ${idx + 1}`}
-                            className={`block rounded-full transition-all duration-300 cursor-pointer ${
-                                idx === activeIndex
-                                    ? "w-2.5 h-2.5 bg-gray-800"
-                                    : "w-1.5 h-1.5 bg-gray-300 hover:bg-gray-400"
-                            }`}
-                        />
+                            className="min-w-8 min-h-8 flex items-center justify-center p-2 rounded-full cursor-pointer focus:outline-none"
+                        >
+                            {/* Point visuel qui conserve la taille initiale */}
+                            <span
+                                className={`block rounded-full transition-all duration-300 ${
+                                    idx === activeIndex
+                                        ? "w-3.5 h-3.5 bg-text"
+                                        : "w-2.5 h-2.5 bg-gray-300 hover:bg-gray-400"
+                                }`}
+                            />
+                        </button>
                     ))}
                 </div>
             </div>
