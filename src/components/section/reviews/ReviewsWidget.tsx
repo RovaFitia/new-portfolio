@@ -145,7 +145,6 @@ export const ReviewsWidget: React.FC<{ className?: string }> = ({
                                                     {review.author_title}
                                                 </Typography>
                                                 <div
-                                                    aria-label="Client vérifié"
                                                     title="Client vérifié"
                                                     className="inline-flex items-center"
                                                 >
