@@ -36,6 +36,19 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        // Validation rigoureuse : vérifie si un champ est vide ou ne contient que des espaces
+        if (
+            !formData.firstName.trim() ||
+            !formData.lastName.trim() ||
+            !formData.email.trim() ||
+            !formData.message.trim()
+        ) {
+            setStatus("error");
+            setErrorMessage("Veuillez remplir tous les champs obligatoires avant d'envoyer le message.");
+            return;
+        }
+
         setStatus("loading");
         setErrorMessage("");
 
@@ -82,12 +95,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div className="flex flex-col justify-center w-full max-w-3xl p-6 lg:p-10 mt-5 bg-white text-zinc-900 border border-line">
             {/* Message de succès */}
             {status === "success" ? (
-                <div className="mt-8 p-6 bg-zinc-50 border border-zinc-200 rounded-xs text-center space-y-2">
+                <div className="text-center space-y-2">
                     <p className="text-sm font-semibold uppercase tracking-wider">
                         Message envoyé avec succès !
                     </p>
                     <p className="mt-3.5 text-xs text-zinc-500">
-                        Merci de nous avoir contactés. Nous vous répondrons dans
+                        Merci de nous avoir contactés. <br />Nous vous répondrons dans
                         les plus brefs délais.
                     </p>
                     <Button variant="solid" className="mt-7 text-center mx-auto" onClick={() => setStatus("idle")}>Envoyer un autre message</Button>
@@ -121,7 +134,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                                 htmlFor="lastName"
                                 className="block text-xs uppercase tracking-wider text-zinc-800"
                             >
-                               Prénom
+                                Prénom
                             </label>
                             <input
                                 type="text"
