@@ -12,7 +12,7 @@ import { scrollToSection } from "@/utils/scrollToSection";
 import { useNavLinks } from "@/data/data";
 
 export default function Navbar(): JSX.Element {
-    const NAV_LINKS: {name: string, href: string}[] = useNavLinks();
+    const NAV_LINKS = useNavLinks();
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const toggleMenu = () => setIsOpen((prev) => !prev);
     const [isScrolled, setIsScrolled] = useState(false);

@@ -11,7 +11,7 @@ export default function NavMobile({
     isOpen,
     setIsOpen,
 }: NavMobileProps): JSX.Element {
-    const NAV_LINKS: {name: string, href: string}[] = useNavLinks();
+    const NAV_LINKS = useNavLinks();
     return (
         <div
             className={`grid transition-all duration-300 ease-in-out lg:hidden lg:px-0 ${

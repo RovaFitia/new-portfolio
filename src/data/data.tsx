@@ -7,6 +7,13 @@ type Badge = {
     size: number;
 };
 
+type KeyValuePair<K1 extends string, K2 extends string> = {
+  [K in K1 | K2]: string;
+};
+
+type Stat = KeyValuePair<'value', 'label'>;
+type NavLink = KeyValuePair<'name', 'href'>;
+
 type Tab = {
   id: string;
   label: string;
@@ -26,7 +33,7 @@ const BADGES_DATA: Badge[] = [
     { label: "O", bg: "#0284c7", iconColor: "#e0f2fe", size: 40 }, // 9. Bleu océan / Bleu clair (Le 3ème O a sa propre palette)
 ];
 
-export function useStats() {
+export function useStats(): Stat[] {
     const { t } = useTranslation();
 
     return [
@@ -36,7 +43,7 @@ export function useStats() {
     ];
 }
 
-export function useNavLinks() {
+export function useNavLinks(): NavLink[] {
     const { t } = useTranslation();
 
     return [
@@ -46,33 +53,6 @@ export function useNavLinks() {
         { name: t("nav.portfolio"), href: "#portfolio" },
     ];
 }
-
-// const TABS_DATA: Tab[] = [
-//   {
-//     id: "2021",
-//     label: "2021 - 2023",
-//     title: "Initiation et passion",
-//     content: "Début en tant que développeur web et formateur en développement web. Découverte de ma passion pour ce métier, partage d'expériences et réalisation de sites pour des ESN, centres de formation, blogs, projets de voyage et tourisme. Création et personnalisation de thèmes WordPress"
-//   },
-//   {
-//     id: "2024",
-//     label: "2024",
-//     title: "Freelance et expansion",
-//     content: "Fort de trois années d'expérience, j'ai travaillé en sous‑traitance pour des entreprises françaises. Résolution d'innombrables problèmes techniques et bugs. Interventions et créations de sites web, simples comme complexes, notamment dans l'immobilier, l'investissement locatif et divers projets front‑end."
-//   },
-//   {
-//     id: "2025",
-//     label: "2025",
-//     title: "Expérience et polyvalence",
-//     content: "Développeur expérimenté, spécialiste WordPress et intégrateur pixel‑perfect. Interventions dans de nombreux projets web pour des entreprises malgaches, françaises et canadiennes. Collaboration avec des ONG, organisations, secteurs de l'immobilier, centres pour femmes, conciergeries et autres domaines variés. Expertise en performance web et SEO technique."
-//   },
-//   {
-//     id: "2026",
-//     label: "2026",
-//     title: "Expertise confirmée",
-//     content: "Toujours animé par ma passion, je poursuis mon activité en tant que freelance déclaré. Devenu webmaster expert, WordPress n'a plus de secrets pour moi: création et personnalisation de thèmes, développement de plugins, optimisation de la performance web et SEO technique. Maîtrise de Gutenberg, WooCommerce, Elementor, Divi, Avada et bien d'autres outils. J'ai atteint une cinquantaine de projets réalisés, confirmant mon expertise et ma polyvalence."
-//   }
-// ];
 
 function useTabsData(): Tab[] {
     const { t } = useTranslation();

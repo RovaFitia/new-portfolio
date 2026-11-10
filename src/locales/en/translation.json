@@ -1,4 +1,10 @@
 {
+    "hero": {
+        "badge": "Your best partner",
+        "title": "A website",
+        "titleColor": "your best asset",
+        "text": "You are not here by chance. You are in the right place to give your project the visibility it deserves."
+    },
     "stats": {
         "exp": "Years of experience",
         "projects": "Completed projects",
