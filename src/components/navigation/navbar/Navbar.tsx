@@ -11,6 +11,7 @@ import NavMobile from "./NavMobile";
 // import { NAV_LINKS } from "@/data/data";
 import { scrollToSection } from "@/utils/scrollToSection";
 import { useNavLinks } from "@/data/data";
+import { LanguageSwitcher } from "@/components/lang/LanguageSwitcher";
 
 export default function Navbar(): JSX.Element {
     const { t } = useTranslation();
@@ -56,7 +57,9 @@ export default function Navbar(): JSX.Element {
                     </div>
 
                     {/* CTA Desktop */}
-                    <div className="hidden items-center gap-3 lg:flex">
+                    <div className="hidden items-center gap-4 lg:flex">
+                        <LanguageSwitcher />
+
                         <Button variant="solid" size="md" onClick={(e) => scrollToSection(e, "#cta")}>
                             { t("contactBtn")}
                         </Button>

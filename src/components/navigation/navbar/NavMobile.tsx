@@ -3,6 +3,7 @@ import { scrollToSection } from "@/utils/scrollToSection";
 import Button from "@/components/ui/Button";
 import { useNavLinks } from "@/data/data";
 import { useTranslation } from "react-i18next";
+import { MobileLanguageMenu } from "@/components/lang/MobileLanguageMenu";
 
 type NavMobileProps = {
     isOpen: boolean;
@@ -53,6 +54,8 @@ export default function NavMobile({
                             </svg>
                         </a>
                     ))}
+
+                         <MobileLanguageMenu />
 
                     <div className="pt-5 px-5">
                         <Button
