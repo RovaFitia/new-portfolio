@@ -1,15 +1,15 @@
 {
     "hero": {
-        "badge" : "Votre meuilleur collaborateur",
-        "title" : "Un site web",
-        "titleColor" : "votre meilleur atout",
-        "text" : "Vous n’êtes pas ici par hasard.Vous êtes au bon endroit pour donner à votre projet la visibilité qu’il mérite."
+        "badge": "Votre meuilleur collaborateur",
+        "title": "Un site web",
+        "titleColor": "votre meilleur atout",
+        "text": "Vous n’êtes pas ici par hasard.Vous êtes au bon endroit pour donner à votre projet la visibilité qu’il mérite."
     },
-    "about" : {
-        "ancre" : "A propos",
-        "title" : "Pourquoi me choisir ?",
-        "desc1" : "Développeur web freelance à Madagascar,créative design ,expert WordPress, WooCommerce et SEO, avec plus de 5 ans d’expérience et plus de 50 sites web professionnels conçus dans divers secteurs.",
-        "desc2" : "En tant que freelance déclaré, j'offre des prestations fiables et conforme aux standards professionnels."
+    "about": {
+        "ancre": "A propos",
+        "title": "Pourquoi me choisir ?",
+        "desc1": "Développeur web freelance à Madagascar,créative design ,expert WordPress, WooCommerce et SEO, avec plus de 5 ans d’expérience et plus de 50 sites web professionnels conçus dans divers secteurs.",
+        "desc2": "En tant que freelance déclaré, j'offre des prestations fiables et conforme aux standards professionnels."
     },
     "stats": {
         "exp": "Ans d'expérience",
@@ -42,6 +42,33 @@
             "label": "2026",
             "title": "Expertise confirmée",
             "content": "Toujours animé par ma passion, je poursuis mon activité en tant que freelance déclaré. Devenu webmaster expert, WordPress n'a plus de secrets pour moi: création et personnalisation de thèmes, développement de plugins, optimisation de la performance web et SEO technique. Maîtrise de Gutenberg, WooCommerce, Elementor, Divi, Avada et bien d'autres outils. J'ai atteint une cinquantaine de projets réalisés, confirmant mon expertise et ma polyvalence."
+        }
+    },
+    "servicesList": {
+        "wordpress": {
+            "title": "Développement WordPress",
+            "description": "Création de sites élégants, attractifs performantes et sécurisées.",
+            "tags": ["Vitrine", "E-commerce", "Refonte", "Maintenance"]
+        },
+        "customDev": {
+            "title": "Développement personnalisé",
+            "description": "Développement sur mesure moderne et unique. Chaque projet est pensé pour être évolutif, performant et parfaitement aligné avec vos objectifs.",
+            "tags": [
+                "Creation Plugin",
+                "Creation Theme",
+                "Creative Design",
+                "Design Pixel Perfect"
+            ]
+        },
+        "maintenance": {
+            "title": "Maintenance et débogage",
+            "description": "Un service pensé pour garantir stabilité, sécurité et performance, afin d’offrir une expérience fluide aux utilisateurs.",
+            "tags": ["Maintenance", "Performance", "Sécurisation"]
+        },
+        "optimization": {
+            "title": "Optimisation web",
+            "description": "Optimisation de sites web, de contenus et de la performance globale.",
+            "tags": ["SEO", "Visibilité", "Responsive", "Performance"]
         }
     },
     "footer": {

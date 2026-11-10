@@ -44,6 +44,33 @@
             "content": "Always driven by my passion, I continue my activity as a registered freelancer. Having become an expert webmaster, WordPress holds no secrets for me: theme creation and customization, plugin development, web performance optimization and technical SEO. Mastery of Gutenberg, WooCommerce, Elementor, Divi, Avada and many other tools. I have reached about fifty completed projects, confirming my expertise and versatility."
         }
     },
+    "servicesList": {
+        "wordpress": {
+            "title": "WordPress Development",
+            "description": "Creation of elegant, attractive, high-performing and secure websites.",
+            "tags": ["Showcase", "E-commerce", "Redesign", "Maintenance"]
+        },
+        "customDev": {
+            "title": "Custom Development",
+            "description": "Modern and unique tailor-made development. Each project is designed to be scalable, performant and perfectly aligned with your goals.",
+            "tags": [
+                "Plugin Creation",
+                "Theme Creation",
+                "Creative Design",
+                "Pixel Perfect Design"
+            ]
+        },
+        "maintenance": {
+            "title": "Maintenance & Debugging",
+            "description": "A service designed to guarantee stability, security and performance, in order to offer a smooth user experience.",
+            "tags": ["Maintenance", "Performance", "Security"]
+        },
+        "optimization": {
+            "title": "Web Optimization",
+            "description": "Optimization of websites, content and overall performance.",
+            "tags": ["SEO", "Visibility", "Responsive", "Performance"]
+        }
+    },
     "footer": {
         "app": {
             "title": "App",
