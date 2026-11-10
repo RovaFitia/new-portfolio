@@ -47,31 +47,62 @@ export function useNavLinks() {
     ];
 }
 
-const TABS_DATA: Tab[] = [
-  {
-    id: "2021",
-    label: "2021 - 2023",
-    title: "Initiation et passion",
-    content: "Début en tant que développeur web et formateur en développement web. Découverte de ma passion pour ce métier, partage d'expériences et réalisation de sites pour des ESN, centres de formation, blogs, projets de voyage et tourisme. Création et personnalisation de thèmes WordPress"
-  },
-  {
-    id: "2024",
-    label: "2024",
-    title: "Freelance et expansion",
-    content: "Fort de trois années d'expérience, j'ai travaillé en sous‑traitance pour des entreprises françaises. Résolution d'innombrables problèmes techniques et bugs. Interventions et créations de sites web, simples comme complexes, notamment dans l'immobilier, l'investissement locatif et divers projets front‑end."
-  },
-  {
-    id: "2025",
-    label: "2025",
-    title: "Expérience et polyvalence",
-    content: "Développeur expérimenté, spécialiste WordPress et intégrateur pixel‑perfect. Interventions dans de nombreux projets web pour des entreprises malgaches, françaises et canadiennes. Collaboration avec des ONG, organisations, secteurs de l'immobilier, centres pour femmes, conciergeries et autres domaines variés. Expertise en performance web et SEO technique."
-  },
-  {
-    id: "2026",
-    label: "2026",
-    title: "Expertise confirmée",
-    content: "Toujours animé par ma passion, je poursuis mon activité en tant que freelance déclaré. Devenu webmaster expert, WordPress n'a plus de secrets pour moi: création et personnalisation de thèmes, développement de plugins, optimisation de la performance web et SEO technique. Maîtrise de Gutenberg, WooCommerce, Elementor, Divi, Avada et bien d'autres outils. J'ai atteint une cinquantaine de projets réalisés, confirmant mon expertise et ma polyvalence."
-  }
-];
+// const TABS_DATA: Tab[] = [
+//   {
+//     id: "2021",
+//     label: "2021 - 2023",
+//     title: "Initiation et passion",
+//     content: "Début en tant que développeur web et formateur en développement web. Découverte de ma passion pour ce métier, partage d'expériences et réalisation de sites pour des ESN, centres de formation, blogs, projets de voyage et tourisme. Création et personnalisation de thèmes WordPress"
+//   },
+//   {
+//     id: "2024",
+//     label: "2024",
+//     title: "Freelance et expansion",
+//     content: "Fort de trois années d'expérience, j'ai travaillé en sous‑traitance pour des entreprises françaises. Résolution d'innombrables problèmes techniques et bugs. Interventions et créations de sites web, simples comme complexes, notamment dans l'immobilier, l'investissement locatif et divers projets front‑end."
+//   },
+//   {
+//     id: "2025",
+//     label: "2025",
+//     title: "Expérience et polyvalence",
+//     content: "Développeur expérimenté, spécialiste WordPress et intégrateur pixel‑perfect. Interventions dans de nombreux projets web pour des entreprises malgaches, françaises et canadiennes. Collaboration avec des ONG, organisations, secteurs de l'immobilier, centres pour femmes, conciergeries et autres domaines variés. Expertise en performance web et SEO technique."
+//   },
+//   {
+//     id: "2026",
+//     label: "2026",
+//     title: "Expertise confirmée",
+//     content: "Toujours animé par ma passion, je poursuis mon activité en tant que freelance déclaré. Devenu webmaster expert, WordPress n'a plus de secrets pour moi: création et personnalisation de thèmes, développement de plugins, optimisation de la performance web et SEO technique. Maîtrise de Gutenberg, WooCommerce, Elementor, Divi, Avada et bien d'autres outils. J'ai atteint une cinquantaine de projets réalisés, confirmant mon expertise et ma polyvalence."
+//   }
+// ];
 
-export {BADGES_DATA, TABS_DATA};
+function useTabsData(): Tab[] {
+    const { t } = useTranslation();
+
+    return [
+        {
+            id: "2021",
+            label: t("timeline.2021.label"),
+            title: t("timeline.2021.title"),
+            content: t("timeline.2021.content"),
+        },
+        {
+            id: "2024",
+            label: t("timeline.2024.label"),
+            title: t("timeline.2024.title"),
+            content: t("timeline.2024.content"),
+        },
+        {
+            id: "2025",
+            label: t("timeline.2025.label"),
+            title: t("timeline.2025.title"),
+            content: t("timeline.2025.content"),
+        },
+        {
+            id: "2026",
+            label: t("timeline.2026.label"),
+            title: t("timeline.2026.title"),
+            content: t("timeline.2026.content"),
+        },
+    ];
+}
+
+export {BADGES_DATA, useTabsData};

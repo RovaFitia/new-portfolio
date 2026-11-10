@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { TABS_DATA } from "@/data/data";
+// import { TABS_DATA } from "@/data/data";
 import { Typography } from "./Typography";
-
-const SORTED_TABS = [...TABS_DATA].sort((a, b) => Number(b.id) - Number(a.id));
+import { useTabsData } from "@/data/data";
 
 export default function Tabs() {
+    const SORTED_TABS = useTabsData().sort((a, b) => Number(b.id) - Number(a.id));
+
     const [activeTab, setActiveTab] = useState(SORTED_TABS[0]?.id || "");
     const [canScrollRight, setCanScrollRight] = useState(true);
 
