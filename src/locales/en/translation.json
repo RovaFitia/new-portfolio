@@ -56,6 +56,11 @@
         "more": "See more",
         "less" : "See less"
     },
+    "testimonials": {
+        "ancre": "Testimonials",
+        "title": "What they wrote",
+        "text": "Discover some of the feedback received, featuring representative testimonials from satisfied clients."
+    },
     "servicesList": {
         "wordpress": {
             "title": "WordPress Development",

@@ -56,6 +56,11 @@
         "more": "Voir plus",
         "less" : "Voir moins"
     },
+    "testimonials" : {
+        "ancre" : "Témoignages",
+        "title" : "Ils ont écrit",
+        "text" : " Découvrez certains des avis reçus, extraits de témoignages représentatifs des clients satisfaits."
+    },
     "servicesList": {
         "wordpress": {
             "title": "Développement WordPress",
