@@ -1,0 +1,63 @@
+{
+    "stats": {
+        "exp": "Years of experience",
+        "projects": "Completed projects",
+        "clients": "Satisfied companies"
+    },
+    "nav": {
+        "about": "About",
+        "services": "Services",
+        "reviews": "Reviews",
+        "portfolio": "Portfolio"
+    },
+    "timeline": {
+        "2021": {
+            "label": "2021 - 2023",
+            "title": "Initiation and passion",
+            "content": "Started as a web developer and web development trainer..."
+        },
+        "2024": {
+            "label": "2024",
+            "title": "Freelancing and expansion",
+            "content": "With three years of experience..."
+        },
+        "2025": {
+            "label": "2025",
+            "title": "Experience and versatility",
+            "content": "Experienced developer, WordPress specialist..."
+        },
+        "2026": {
+            "label": "2026",
+            "title": "Confirmed expertise",
+            "content": "Always driven by my passion..."
+        }
+    },
+    "footer": {
+        "app": {
+            "title": "App",
+            "about": "About",
+            "services": "Services",
+            "portfolio": "Portfolio",
+            "cta": "CTA"
+        },
+        "info": {
+            "title": "Information",
+            "faq": "FAQ",
+            "reviews": "Reviews",
+            "legal": "Legal Notice"
+        },
+        "social": {
+            "title": "Social Media",
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn",
+            "github": "Github"
+        },
+        "contact": {
+            "title": "Contact",
+            "email": "Email",
+            "whatsapp": "WhatsApp",
+            "phone": "Phone"
+        }
+    }
+}

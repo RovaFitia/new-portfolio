@@ -1,7 +1,7 @@
-import { NAV_LINKS } from "@/data/data";
 import Button from "@/components/ui/Button";
 import type { JSX } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
+import { useNavLinks } from "@/data/data";
 type NavMobileProps = {
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
@@ -11,6 +11,7 @@ export default function NavMobile({
     isOpen,
     setIsOpen,
 }: NavMobileProps): JSX.Element {
+    const NAV_LINKS: {name: string, href: string}[] = useNavLinks();
     return (
         <div
             className={`grid transition-all duration-300 ease-in-out lg:hidden lg:px-0 ${

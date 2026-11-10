@@ -1,16 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 type Badge = {
     label: string;
     bg: string;
     iconColor: string;
     size: number;
 };
-
-type KeyValuePair<K1 extends string, K2 extends string> = {
-  [K in K1 | K2]: string;
-};
-
-type Stat = KeyValuePair<'value', 'label'>;
-type NavLink = KeyValuePair<'name', 'href'>;
 
 type Tab = {
   id: string;
@@ -31,18 +26,26 @@ const BADGES_DATA: Badge[] = [
     { label: "O", bg: "#0284c7", iconColor: "#e0f2fe", size: 40 }, // 9. Bleu océan / Bleu clair (Le 3ème O a sa propre palette)
 ];
 
-const STATS: Stat[] = [
-  { value: "5", label: "Ans d'expérience" },
-  { value: "50", label: "Projets réalisés" },
-  { value: "25", label: "Entreprises satisfaites" },
-];
+export function useStats() {
+    const { t } = useTranslation();
 
-const NAV_LINKS: NavLink[] = [
-    { name: "À propos", href: "#apropos" },
-    { name: "Services", href: "#services" },
-    { name: "Témoignages", href: "#reviews" },
-    { name: "Portfolio", href: "#portfolio" },
-];
+    return [
+        { value: "5", label: t("stats.exp") },
+        { value: "50", label: t("stats.projects") },
+        { value: "25", label: t("stats.clients") },
+    ];
+}
+
+export function useNavLinks() {
+    const { t } = useTranslation();
+
+    return [
+        { name: t("nav.about"), href: "#apropos" },
+        { name: t("nav.services"), href: "#services" },
+        { name: t("nav.reviews"), href: "#reviews" },
+        { name: t("nav.portfolio"), href: "#portfolio" },
+    ];
+}
 
 const TABS_DATA: Tab[] = [
   {
@@ -71,4 +74,4 @@ const TABS_DATA: Tab[] = [
   }
 ];
 
-export {BADGES_DATA, STATS, NAV_LINKS, TABS_DATA};
+export {BADGES_DATA, TABS_DATA};

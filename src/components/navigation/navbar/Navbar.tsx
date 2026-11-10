@@ -7,10 +7,12 @@ import Logo from "@/components/ui/Logo";
 import Hamburger from "./Hamburger";
 import NavMobile from "./NavMobile";
 
-import { NAV_LINKS } from "@/data/data";
+// import { NAV_LINKS } from "@/data/data";
 import { scrollToSection } from "@/utils/scrollToSection";
+import { useNavLinks } from "@/data/data";
 
 export default function Navbar(): JSX.Element {
+    const NAV_LINKS: {name: string, href: string}[] = useNavLinks();
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const toggleMenu = () => setIsOpen((prev) => !prev);
     const [isScrolled, setIsScrolled] = useState(false);

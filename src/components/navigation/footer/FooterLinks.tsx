@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Typography } from "@/components/ui/Typography";
-import { FOOTER_SECTIONS } from "@/data/footerData";
+// import { FOOTER_SECTIONS } from "@/data/footerData";
 import { scrollToSection } from "@/utils/scrollToSection";
 import React from "react";
+import { useFooterSections } from "@/data/footerData";
 
 export const FooterLinks: React.FC = () => {
+    const FOOTER_SECTIONS = useFooterSections();
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:col-span-5">
             {FOOTER_SECTIONS.map((section) => (
