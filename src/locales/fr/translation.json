@@ -44,6 +44,18 @@
             "content": "Toujours animé par ma passion, je poursuis mon activité en tant que freelance déclaré. Devenu webmaster expert, WordPress n'a plus de secrets pour moi: création et personnalisation de thèmes, développement de plugins, optimisation de la performance web et SEO technique. Maîtrise de Gutenberg, WooCommerce, Elementor, Divi, Avada et bien d'autres outils. J'ai atteint une cinquantaine de projets réalisés, confirmant mon expertise et ma polyvalence."
         }
     },
+    "service" : {
+        "title" : "Collaborons ensemble",
+        "text" : "Je conçois et développe des solutions digitales sur mesure adaptées à chaque besoin.",
+        "serviceBtn" : "Collaborer avec moi"
+    },
+    "portfolio" : {
+        "title" : "Mes réalisations témoignent",
+        "text" : "Mes réalisations couvrent une large variété de secteurs et à l'international.",
+        "btn" : "Collaborer avec moi",
+        "more": "Voir plus",
+        "less" : "Voir moins"
+    },
     "servicesList": {
         "wordpress": {
             "title": "Développement WordPress",

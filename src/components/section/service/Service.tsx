@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/container/Container";
 import { Typography } from "@/components/ui/Typography";
 import ServiceCard from "./ServiceCard";
@@ -5,6 +6,7 @@ import Button from "@/components/ui/Button";
 import { scrollToSection } from "@/utils/scrollToSection";
 
 export default function Service() {
+    const { t } = useTranslation();
     return (
         <div className="w-full h-auto pt-12 md:pt-20 lg:pt-28" id="services">
             <Container>
@@ -22,7 +24,7 @@ export default function Service() {
                             component="h2"
                             className="leading-none text-balance"
                         >
-                            Collaborons ensemble
+                            {t("service.title")}
                         </Typography>
                     </div>
                     <div className="w-full flex flex-col gap-4">
@@ -31,10 +33,10 @@ export default function Service() {
                             component="p"
                             className="font-haffer-r text-dark text-pretty md:text-balance mt-2.5"
                         >
-                           Je conçois et développe des solutions digitales sur mesure adaptées à chaque besoin.
+                           {t("service.text")}
                         </Typography>
                         <Button variant="super" className="w-fit group" onClick={(e) => scrollToSection(e, "#cta")}>
-                            Collaborer avec moi
+                            {t("service.serviceBtn")}
                             <svg
                                 className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                                 fill="none"

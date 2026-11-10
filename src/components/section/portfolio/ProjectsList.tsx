@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import Button from "@/components/ui/Button";
 import ProjectCard from "@/components/ui/ProjectCard";
 import PROJECTS from "@/data/portfolio";
 import { useState } from "react";
 
 export default function ProjectsList() {
+    const { t } = useTranslation();
     const [isExpanded, setIsExpanded] = useState(false);
 
     const visibleProjects = PROJECTS.slice(0, 6);
@@ -77,7 +79,7 @@ export default function ProjectsList() {
                         className="group"
                         onClick={() => setIsExpanded(!isExpanded)}
                     >
-                        {isExpanded ? "Voir moins" : "Voir plus"}
+                        {isExpanded ? t("portfolio.less") : t("portfolio.more")}
                         <svg
                             className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                             fill="none"

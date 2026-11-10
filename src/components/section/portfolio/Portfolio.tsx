@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/container/Container";
 import { Typography } from "@/components/ui/Typography";
 import ProjectsList from "./ProjectsList";
@@ -5,11 +6,12 @@ import Button from "@/components/ui/Button";
 import { scrollToSection } from "@/utils/scrollToSection";
 
 export default function Portfolio() {
+    const { t } = useTranslation();
     return (
         <div className="w-full h-auto pt-12 md:pt-20 lg:pt-28" id="portfolio">
             <Container className="flex flex-col gap-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
-                    <div className="w-full flex flex-col gap-1.5">
+                    <div className="w-full flex flex-col gap-1.5 text-balance">
                         <Typography
                             variant="lead"
                             component="div"
@@ -22,7 +24,7 @@ export default function Portfolio() {
                             component="h2"
                             className="leading-none"
                         >
-                            Mes réalisations témoignent
+                            {t("portfolio.title")}
                         </Typography>
                     </div>
                     <div className="w-full flex flex-col gap-4">
@@ -31,11 +33,10 @@ export default function Portfolio() {
                             component="p"
                             className="font-haffer-r text-dark text-pretty md:text-balance mt-2.5"
                         >
-                            Mes réalisations couvrent une large variété de
-                            secteurs et à l'international.
+                            {t("portfolio.text")}
                         </Typography>
                         <Button variant="super" className="w-fit group" onClick={(e) => scrollToSection(e, "#cta")}>
-                            Collaborer avec moi
+                            {t("portfolio.btn")}
                             <svg
                                 className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                                 fill="none"
