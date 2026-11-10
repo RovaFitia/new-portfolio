@@ -6,7 +6,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const MentionLegalePage: React.FC = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language.slice(0, 2);
     const lastUpdated = t("metionLegal.updateTime");
 
 
@@ -21,7 +22,7 @@ export const MentionLegalePage: React.FC = () => {
                     {/* En-tête */}
                     <div className="border-b border-line pb-8 mb-10">
                         <Link
-                            to="/"
+                            to={`/${currentLang}`}
                             className="inline-flex items-center text-sm font-medium text-dark hover:text-black mb-6 transition-colors tracking-tight"
                         >
                             ← {t("metionLegal.back")}

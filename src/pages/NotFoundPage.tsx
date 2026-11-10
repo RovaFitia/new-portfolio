@@ -4,7 +4,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const NotFoundPage: React.FC = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language.slice(0, 2);
     return (
         <>
             <SEO
@@ -26,7 +27,7 @@ export const NotFoundPage: React.FC = () => {
                 </p>
 
                 <Link
-                    to="/"
+                    to={`/${currentLang}`}
                     className="inline-block bg-primary-400 text-text font-haffer-md text-[0.9rem] px-6.5 py-3.25 rounded-[11px] no-underline transition-transform duration-150 hover:translate-y-[-2px]"
                 >
                     ← {t("notFound.content.btn")}

@@ -33,7 +33,7 @@ const BADGES_DATA: Badge[] = [
     { label: "O", bg: "#0284c7", iconColor: "#e0f2fe", size: 40 }, // 9. Bleu océan / Bleu clair (Le 3ème O a sa propre palette)
 ];
 
-export function useStats(): Stat[] {
+function useStats(): Stat[] {
     const { t } = useTranslation();
 
     return [
@@ -43,14 +43,15 @@ export function useStats(): Stat[] {
     ];
 }
 
-export function useNavLinks(): NavLink[] {
-    const { t } = useTranslation();
+function useNavLinks(): NavLink[] {
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language.slice(0, 2);
 
     return [
-        { name: t("nav.about"), href: "#apropos" },
-        { name: t("nav.services"), href: "#services" },
-        { name: t("nav.reviews"), href: "#reviews" },
-        { name: t("nav.portfolio"), href: "#portfolio" },
+        { name: t("nav.about"), href: `/${currentLang}/#apropos` },
+        { name: t("nav.services"), href: `/${currentLang}/#services` },
+        { name: t("nav.reviews"), href: `/${currentLang}/#reviews` },
+        { name: t("nav.portfolio"), href: `/${currentLang}/#portfolio` },
     ];
 }
 
@@ -85,4 +86,4 @@ function useTabsData(): Tab[] {
     ];
 }
 
-export {BADGES_DATA, useTabsData};
+export {BADGES_DATA, useStats, useNavLinks, useTabsData};
