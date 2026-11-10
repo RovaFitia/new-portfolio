@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Button from "@/components/ui/Button";
 import React, { useState, type ChangeEvent, type FormEvent } from "react";
 
@@ -15,6 +16,7 @@ type ContactFormProps = {
 export const ContactForm: React.FC<ContactFormProps> = ({
     accessKey = "a4dafad1-587a-4bad-aefd-cb09d18aa4ee",
 }) => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState<FormData>({
         firstName: "",
         lastName: "",
@@ -45,7 +47,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             !formData.message.trim()
         ) {
             setStatus("error");
-            setErrorMessage("Veuillez remplir tous les champs obligatoires avant d'envoyer le message.");
+            setErrorMessage(t("form.empty"));
             return;
         }
 
@@ -82,12 +84,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                 setStatus("error");
                 setErrorMessage(
                     result.message ||
-                        "Une erreur est survenue lors de l'envoi.",
+                        t("form.error.send"),
                 );
             }
         } catch (err) {
             setStatus("error");
-            setErrorMessage("Erreur de connexion. Veuillez réessayer plus tard." + err);
+            setErrorMessage(t("form.error.server") + err);
         }
     };
 
@@ -97,13 +99,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             {status === "success" ? (
                 <div className="text-center space-y-2">
                     <p className="text-sm font-semibold uppercase tracking-wider">
-                        Message envoyé avec succès !
+                       {t("form.validate.success")}
                     </p>
                     <p className="mt-3.5 text-xs text-zinc-500">
-                        Merci de nous avoir contactés. <br />Nous vous répondrons dans
-                        les plus brefs délais.
+                        {t("form.validate.notice1")} <br />{t("form.validate.notice2")}
                     </p>
-                    <Button variant="solid" className="mt-7 text-center mx-auto" onClick={() => setStatus("idle")}>Envoyer un autre message</Button>
+                    <Button variant="solid" className="mt-7 text-center mx-auto" onClick={() => setStatus("idle")}>{t("form.validate.btn")}</Button>
                 </div>
             ) : (
                 /* Formulaire */
@@ -115,7 +116,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                                 htmlFor="firstName"
                                 className="block text-xs uppercase tracking-wider text-zinc-800"
                             >
-                                Nom
+                                {t("form.name")}
                             </label>
                             <input
                                 type="text"
@@ -134,7 +135,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                                 htmlFor="lastName"
                                 className="block text-xs uppercase tracking-wider text-zinc-800"
                             >
-                                Prénom
+                                {t("form.lastname")}
                             </label>
                             <input
                                 type="text"
@@ -182,7 +183,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                             name="message"
                             rows={4}
                             required
-                            placeholder="Comment puis-je vous aider ?"
+                            placeholder={t('form.Message')}
                             value={formData.message}
                             onChange={handleChange}
                             className="w-full px-4 py-3 text-sm bg-white border border-line rounded-xs focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder-zinc-400 resize-none"
@@ -204,8 +205,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                     >
                         <span>
                             {status === "loading"
-                                ? "En cours d'envoi..."
-                                : "Envoyez vos messages"}
+                                ? t("form.load")
+                                : t("form.send")}
                         </span>
                         <svg
                             className="w-4 h-4 ml-2"

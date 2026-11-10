@@ -1,4 +1,10 @@
 {
+    "landing": {
+        "seo": {
+            "title": "Freelance WordPress Expert & Front-End Developer",
+            "desc": "Freelancer based in Madagascar, specializing in creating unique, modern, performance-optimized, and SEO-friendly websites."
+        }
+    },
     "hero": {
         "badge": "Your best partner",
         "title": "A website",
@@ -117,6 +123,10 @@
             "tags": ["SEO", "Visibility", "Responsive", "Performance"]
         }
     },
+    "contact": {
+        "title": "Let's work together",
+        "text": "I would be delighted to hear from you. Please fill out this form."
+    },
     "footer": {
         "app": {
             "title": "App",
@@ -145,5 +155,58 @@
             "phone": "Phone"
         }
     },
-    "contactBtn": "Contact me"
+    "contactBtn": "Contact me",
+    "form": {
+        "name": "First Name",
+        "lastname": "Last Name",
+        "mail": "Email",
+        "Message": "How can I help you?",
+        "send": "Send message",
+        "load": "Sending...",
+        "validate": {
+            "success": "Message sent successfully!",
+            "notice1": "Thank you for contacting us.",
+            "notice2": "We will get back to you as soon as possible.",
+            "btn": "Send another message"
+        },
+        "error": {
+            "server": "Connection error. Please try again later.",
+            "send": "An error occurred while sending."
+        },
+        "empty": "Please fill in all required fields before sending the message."
+    },
+    "metionLegal": {
+        "seo": {
+            "title": "Legal Notices",
+            "desc": "Read our site's legal notices: information about our website, privacy policy, and your rights as a user."
+        },
+        "back": "Back to home",
+        "title": "Legal Notice",
+        "update": "Last updated:",
+        "updateTime": "September 10, 2026",
+        "description": {
+            "note1": "These legal notices aim to define the terms of use for the Codeur mdg website and its services. By accessing this site, you fully accept these legal notices without reservation.",
+            "note2": "The information provided on this site is for informational purposes only. Codeur mdg strives to ensure the accuracy of the published data. For any questions or remarks regarding the site's content, please contact us via the email address mentioned above.",
+            "property": "Site Owner",
+            "address": "Address",
+            "nif": "Tax Identification Number (NIF)",
+            "stat": "Statistical Number (STAT)",
+            "email": "Email Address",
+            "creator": "Site Creator",
+            "hebergement": "Hosting",
+            "hebergementText": "The Codeur mdg website is hosted by"
+        }
+    },
+
+    "notFound": {
+        "seo": {
+            "title": "Page Not Found",
+            "desc": "The page you are looking for does not exist or has been moved."
+        },
+        "content": {
+            "title": "This page does not exist",
+            "desc": "The link might be broken, or the page may have been moved. Either way, there is nothing here but very large numbers.",
+            "btn": "Back to Home"
+        }
+    }
 }

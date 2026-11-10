@@ -1,4 +1,10 @@
 {
+    "landing" : {
+        "seo" : {
+            "title" : "Freelance, expert en WordPress et développer front-end",
+            "desc" : "Freelance basé à Madagascar, spécialisée dans la création de site web unique, moderne, optimisé, et référencé SEO."
+        }
+    },
     "hero": {
         "badge": "Votre meuilleur collaborateur",
         "title": "Un site web",
@@ -117,6 +123,10 @@
             "tags": ["SEO", "Visibilité", "Responsive", "Performance"]
         }
     },
+    "contact": {
+        "title": "Collaborons ensemble",
+        "text": "Je serais ravis d'avoir de vos nouvelles. Veuillez remplir ce formulaire."
+    },
     "footer": {
         "app": {
             "title": "App",
@@ -145,5 +155,57 @@
             "phone": "Téléphone"
         }
     },
-    "contactBtn": "Contactez-moi"
+    "contactBtn": "Contactez-moi",
+    "form": {
+        "name": "Nom",
+        "lastname": "Prénom",
+        "mail": "Email",
+        "Message": "Comment puis-je vous aider ?",
+        "send": "Envoyez vos messages",
+        "load": "En cours d'envoi...",
+        "validate": {
+            "success": "Message envoyé avec succès !",
+            "notice1": "Merci de nous avoir contactés.",
+            "notice2": "Nous vous répondrons dans les plus brefs délais.",
+            "btn": "Envoyer un autre message"
+        },
+        "error": {
+            "server": "Erreur de connexion. Veuillez réessayer plus tard.",
+            "send": "Une erreur est survenue lors de l'envoi."
+        },
+        "empty": "Veuillez remplir tous les champs obligatoires avant d'envoyer le message."
+    },
+    "metionLegal": {
+        "seo" : {
+            "title" : "Mentions légales",
+            "desc" : "Consultez les mentions légales de notre site : informations sur notre site web, la politique de confidentialité et vos droits en tant qu'utilisateur."
+        },
+        "back" : "Retour à l'accueil",
+        "title" : "Mention légale",
+        "update" : "Dernière mise à jour :",
+        "updateTime" : "10 Septembre 2026",
+        "description" : {
+            "note1" : "Les présentes mentions légales ont pour but de définir les conditions d’utilisation du site Codeur mdg et de ses services. En accédant à ce site, vous acceptez sans réserve les présentes mentions légales.",
+            "note2" : "Les informations présentes sur ce site sont fournies à titre informatif. Codeur mdg s'efforce de garantir l'exactitude des données publiées. Pour toute question ou remarque concernant le contenu du site, merci de nous contacter via l'adresse électronique mentionnée ci-dessus.",
+            "property" : "Propriétaire du site",
+            "address" : "Adresse",
+            "nif" : " Numéro d'identification fiscale (NIF)",
+            "stat" : "Numero Statistique (STAT)",
+            "email" : "Adresse électronique" ,
+            "creator" : "Créateur du site",
+            "hebergement" : "Hébergement",
+            "hebergementText" : "Le site Codeur mdg est hébergé par"
+        }
+    },
+    "notFound" : {
+        "seo" : {
+            "title" : "Page non trouvée",
+            "desc" : "La page que vous recherchez n'existe pas ou a été déplacée."
+        },
+        "content" : {
+            "title" : "Ce page n'existe pas",
+            "desc" : "Le lien est peut-être rompu, ou la page a peut-être été déplacée. Quoi qu'il en soit, il n'y a rien d'autre ici que de très grands nombres.",
+            "btn": "Retour à l'accueil"
+        }
+    }
 }

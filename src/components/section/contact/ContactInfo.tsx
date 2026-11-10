@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { Typography } from "@/components/ui/Typography";
 
 const ContactInfo = () => {
+    const { t } = useTranslation();
     return (
         <div className="w-full flex flex-col items-start md:items-center  gap-1.5">
             <Typography
@@ -15,14 +17,14 @@ const ContactInfo = () => {
                 component="h2"
                 className="leading-none text-pretty text-left md:text-balance md:text-center"
             >
-                Collaborons ensemble
+                {t("contact.title")}
             </Typography>
             <Typography
                 variant="body"
                 component="p"
                 className="font-haffer-r text-dark text-pretty mt-2.5"
             >
-                Je serais ravis d'avoir de vos nouvelles. Veuillez remplir ce formulaire.
+               {t("contact.text")}
             </Typography>
         </div>
     )
