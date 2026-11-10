@@ -5,6 +5,12 @@
         "titleColor": "your best asset",
         "text": "You are not here by chance. You are in the right place to give your project the visibility it deserves."
     },
+    "about": {
+        "ancre": "About",
+        "title": "Why choose me?",
+        "desc1": "Freelance web developer based in Madagascar, creative design, WordPress, WooCommerce, and SEO expert, with over 5 years of experience and more than 50 professional websites designed across various sectors.",
+        "desc2": "As a registered freelancer, I offer reliable services that meet professional standards."
+    },
     "stats": {
         "exp": "Years of experience",
         "projects": "Completed projects",
@@ -65,5 +71,6 @@
             "whatsapp": "WhatsApp",
             "phone": "Phone"
         }
-    }
+    },
+    "contactBtn": "Contact me"
 }
