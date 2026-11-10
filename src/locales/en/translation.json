@@ -54,12 +54,41 @@
         "text": "My projects span a wide variety of industries worldwide.",
         "btn": "Work with me",
         "more": "See more",
-        "less" : "See less"
+        "less": "See less"
     },
     "testimonials": {
         "ancre": "Testimonials",
         "title": "What they wrote",
         "text": "Discover some of the feedback received, featuring representative testimonials from satisfied clients."
+    },
+    "faq": {
+        "title": "Find answers to common questions"
+    },
+    "faqList": {
+        "item1": {
+            "question": "Why choose me?",
+            "answer": "We create high-performing, custom-tailored, and optimized websites. Beyond aesthetic design, we guarantee flawless fluidity, effective SEO, and an engaging user experience. Furthermore, we support you at every step and provide comprehensive training so you can manage your site completely independently."
+        },
+        "item2": {
+            "question": "You are based in Madagascar, how do you handle the time difference?",
+            "answer": "The time difference poses no problem in our collaboration. Our responsive team adapts to your working hours to ensure regular follow-up and smooth communication, regardless of your time zone."
+        },
+        "item3": {
+            "question": "Why trust me?",
+            "answer": "Our clients often say that working with us is like finding a rare gem on the internet: we prioritize transparency, technical excellence, and a trusting partnership."
+        },
+        "item4": {
+            "question": "How can I track the progress of my project?",
+            "answer": "We use modern project management tools so you have total real-time visibility. You receive regular updates and can check the progress of your website at any time."
+        },
+        "item5": {
+            "question": "What are your rates?",
+            "answer": "Our rates are very affordable and adapt according to the complexity and specifics of your project. Contact us directly to get a personalized, no-obligation quote."
+        },
+        "item6": {
+            "question": "Do you guarantee the quality of your services?",
+            "answer": "Yes, absolutely. Each project is carried out with rigor, transparency, and professionalism. We are committed to delivering reliable, durable results that perfectly meet your expectations."
+        }
     },
     "servicesList": {
         "wordpress": {
