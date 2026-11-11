@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Typography } from "@/components/ui/Typography";
 import Badge from "@/components/ui/Badge";
-import SERVICES from "@/data/services";
+import useServices from "@/data/services";
 import { ServiceCardSkeleton } from "@/components/ui/ServiceCardSkeleton";
 
 export default function ServiceCard() {
+    const SERVICES = useServices();
     const [isLoading, setIsLoading] = useState(true);
     const [isTouched, setIsTouched] = useState(false);
 
@@ -36,7 +37,7 @@ export default function ServiceCard() {
         return () => {
             isMounted = false;
         };
-    }, []);
+    });
 
     return (
         <div>

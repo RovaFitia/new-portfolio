@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { Typography } from "@/components/ui/Typography";
 
 export default function HeroText() {
+    const { t } = useTranslation();
     return (
         <>
             <Typography
@@ -8,9 +10,9 @@ export default function HeroText() {
                 component="h1"
                 className="font-pixel text-[clamp(48px, 16vw, 72px)] lg:text-[clamp(58px,7.4vw+106.56px,118px)] tracking-[-0.06em] leading-[.9] flex flex-col"
             >
-                <span>Un site web</span>
+                <span>{ t("hero.title")}</span>
                 <span className="hero-accent text-primary-600">
-                    votre meilleur atout
+                    { t("hero.titleColor")}
                 </span>
             </Typography>
 
@@ -19,8 +21,7 @@ export default function HeroText() {
                 component="p"
                 className="max-w-2xl mx-auto mt-8 text-neutral-600"
             >
-                Vous n’êtes pas ici par hasard.Vous êtes au bon endroit
-                pour donner à votre projet la visibilité qu’il mérite.
+                { t("hero.text")}
             </Typography>
         </>
     );

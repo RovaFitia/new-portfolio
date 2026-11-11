@@ -1,7 +1,8 @@
-import { STATS } from "@/data/data";
 import { Typography } from "@/components/ui/Typography";
+import { useStats } from "@/data/data";
 
 export default function HeroStats() {
+    const STATS = useStats();
     return (
         <div className="grid grid-cols-1 sm:grid-cols-3 w-full mx-auto max-w-200 mt-16 border border-line">
             {STATS.map((stat, index) => (

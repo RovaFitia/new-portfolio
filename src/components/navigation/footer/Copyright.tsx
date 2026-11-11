@@ -1,6 +1,8 @@
 import type { JSX } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Copyright(): JSX.Element {
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
     return (
         <div className="flex flex-col items-center justify-between gap-3 border-t border-line px-6 py-3.5 font-haffer-r text-sm sm:flex-row">
@@ -16,7 +18,7 @@ export default function Copyright(): JSX.Element {
                     }}
                     className="text-zinc-600 hover:text-black flex items-center justify-center gap-2 cursor-pointer group bg-transparent border-0 p-0 font-inherit"
                 >
-                    <span>Back to top</span>
+                    <span>{t("backTop")}</span>
                     <svg
                         className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                         fill="none"
