@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import type { JSX } from "react";
 import { Container } from "../../container/Container";
@@ -7,6 +8,8 @@ import { Vector } from "@/data";
 import { FooterLinks } from "./FooterLinks";
 
 export default function Footer(): JSX.Element {
+    const { i18n } = useTranslation();
+    const currentLang = i18n.language;
 
     return (
         <footer className="w-full bg-[#f9f9f7] text-text py-10">
@@ -17,7 +20,7 @@ export default function Footer(): JSX.Element {
                         {/* Colonne Gauche : Logo + Pastilles */}
                         <div className="relative flex flex-col justify-between border-b border-line min-h-70 lg:col-span-7 lg:border-b-0 lg:border-r">
                             {/* Logo Teak / CodeurMDG */}
-                            <Link to="/" className="">
+                            <Link to={`/${currentLang}`}>
                                 <img alt={Vector.alt} loading="lazy" width={200} height={200} decoding="async" data-nimg="1" src={Vector.image} />
                             </Link>
 
