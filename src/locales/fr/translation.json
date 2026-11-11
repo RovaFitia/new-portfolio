@@ -207,5 +207,6 @@
             "desc" : "Le lien est peut-être rompu, ou la page a peut-être été déplacée. Quoi qu'il en soit, il n'y a rien d'autre ici que de très grands nombres.",
             "btn": "Retour à l'accueil"
         }
-    }
+    },
+    "backTop" : "Retour en Haut"
 }

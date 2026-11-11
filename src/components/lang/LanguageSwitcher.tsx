@@ -61,12 +61,17 @@ export const LanguageSwitcher: React.FC = () => {
     };
 
     return (
-        <div className="relative inline-block text-left" ref={dropdownRef}>
+        <div
+            className="relative inline-block text-left"
+            ref={dropdownRef}
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+        >
             {/* Bouton déclencheur avec icône de traduction */}
             <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-neutral-600 hover:text-text transition-colors"
+                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-neutral-600 hover:text-text transition-colors cursor-pointer"
                 aria-label="Sélectionner la langue"
             >
                 <svg
@@ -82,21 +87,18 @@ export const LanguageSwitcher: React.FC = () => {
                         d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
                     />
                 </svg>
-                {/*<span className="uppercase font-semibold">
-                    {i18n.language.slice(0, 2)}
-                </span>*/}
             </button>
 
             {/* Menu Déroulant */}
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-44 rounded-xs bg-white shadow-md border border-line py-2 z-50 animate-in fade-in zoom-in-95">
+                <div className="absolute right-0 mt-0 w-44 rounded-xs bg-white shadow-md border border-line py-2 z-50 animate-in fade-in zoom-in-95">
                     {LANGUAGES.map((lang) => {
                         const isActive = i18n.language.startsWith(lang.code);
                         return (
                             <button
                                 key={lang.code}
                                 onClick={() => changeLanguage(lang.code)}
-                                className={`w-full text-left px-4 py-2 text-sm flex items-center justify-between hover:bg-gray-100 transition-colors text-uppe ${
+                                className={`w-full text-left px-4 py-2 text-sm flex items-center justify-between hover:bg-gray-100 transition-colors uppercase cursor-pointer ${
                                     isActive
                                         ? "text-green-700"
                                         : "text-gray-600"

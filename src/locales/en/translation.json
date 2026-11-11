@@ -208,5 +208,6 @@
             "desc": "The link might be broken, or the page may have been moved. Either way, there is nothing here but very large numbers.",
             "btn": "Back to Home"
         }
-    }
+    },
+    "backTop" : "Back to top"
 }
