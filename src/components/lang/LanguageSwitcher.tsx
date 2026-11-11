@@ -34,9 +34,9 @@ export const LanguageSwitcher: React.FC = () => {
             document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    // Met à jour i18n et réécrit le chemin d'URL (/fr/... ou /en/...)
+    // Met à jour i18n et réécrit le chemin d'URL en conservant la page active
     const changeLanguage = (newLang: "fr" | "en") => {
-        if (i18n.language === newLang) {
+        if (i18n.language.startsWith(newLang)) {
             setIsOpen(false);
             return;
         }
@@ -44,15 +44,15 @@ export const LanguageSwitcher: React.FC = () => {
         // 1. Découpage du path actuel
         const pathSegments = location.pathname.split("/").filter(Boolean);
 
-        // 2. Vérification si le premier segment est déjà un préfixe de langue
+        // 2. Gestion du préfixe de langue existant ou ajout du nouveau
         if (pathSegments[0] === "fr" || pathSegments[0] === "en") {
-            pathSegments[0] = newLang;
+            pathSegments[0] = newLang; // Remplace "fr" par "en" (ou vice-versa) en gardant le reste (/mentions-legales)
         } else {
-            pathSegments.unshift(newLang);
+            pathSegments.unshift(newLang); // Ajoute la langue si elle n'existait pas au début
         }
 
-        // 3. Reconstitution de la nouvelle URL
-        const newPath = `/${pathSegments.join("")}${location.search}${location.hash}`;
+        // 3. Reconstitution correcte du chemin avec des slashes "/" entre chaque segment
+        const newPath = `/${pathSegments.join("/")}${location.search}${location.hash}`;
 
         // 4. Mettre à jour i18next et naviguer vers la nouvelle URL
         i18n.changeLanguage(newLang);

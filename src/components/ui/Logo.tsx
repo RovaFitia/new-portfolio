@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Branding } from "@/data/index";
 export default function Logo() {
+    const { i18n } = useTranslation();
+    const currentLang = i18n.language;
     return (
         <>
-            <Link to="/">
+            <Link to={`/${currentLang}`}>
                 <div className="flex items-center">
                     <span className="font-primary inline-block text-4xl font-semibold">
                         C
