@@ -1,7 +1,10 @@
-import { NAV_LINKS } from "@/data/data";
-import Button from "@/components/ui/Button";
 import type { JSX } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
+import Button from "@/components/ui/Button";
+import { useNavLinks } from "@/data/data";
+import { useTranslation } from "react-i18next";
+import { MobileLanguageMenu } from "@/components/lang/MobileLanguageMenu";
+
 type NavMobileProps = {
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
@@ -11,6 +14,8 @@ export default function NavMobile({
     isOpen,
     setIsOpen,
 }: NavMobileProps): JSX.Element {
+    const { t } = useTranslation();
+    const NAV_LINKS = useNavLinks();
     return (
         <div
             className={`grid transition-all duration-300 ease-in-out lg:hidden lg:px-0 ${
@@ -50,6 +55,8 @@ export default function NavMobile({
                         </a>
                     ))}
 
+                         <MobileLanguageMenu />
+
                     <div className="pt-5 px-5">
                         <Button
                             href="#cta"
@@ -61,7 +68,7 @@ export default function NavMobile({
                                 scrollToSection(e, "#cta");
                             }}
                         >
-                            Contactez-moi
+                            { t("contactBtn")}
                         </Button>
                     </div>
                 </div>

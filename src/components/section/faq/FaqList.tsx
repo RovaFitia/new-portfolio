@@ -4,9 +4,10 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/AccordionItem";
-import faqData from "@/data/faq";
+import useFaqData from "@/data/faq";
 
 const FaqList = () => {
+    const faqData = useFaqData();
     return (
         <Accordion defaultValue="item-1">
             {faqData.map((faq) => (

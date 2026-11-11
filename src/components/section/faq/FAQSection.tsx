@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/container/Container";
 import { Typography } from "@/components/ui/Typography";
 import FaqList from "./FaqList";
 
 const FAQSection = () => {
+    const { t } = useTranslation();
     return (
         <div className="w-full h-auto pt-12 md:pt-20 lg:pt-28" id="faq">
             <Container className="flex flex-col gap-10 lg:flex-row">
@@ -19,7 +21,7 @@ const FAQSection = () => {
                         component="h2"
                         className="leading-none text-pretty md:text-balance"
                     >
-                        Trouvez les réponses aux questions courantes
+                        {t("faq.title")}
                     </Typography>
                 </div>
 

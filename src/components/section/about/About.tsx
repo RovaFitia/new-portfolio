@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/container/Container";
 import HangingIdCard from "@/components/ui/HangingIdCard";
 import Tabs from "@/components/ui/Tabs";
@@ -5,6 +6,7 @@ import { Typography } from "@/components/ui/Typography";
 import { Profile } from "@/data";
 
 export default function About() {
+    const { t } = useTranslation();
     return (
         <section className="w-full h-auto pt-12 md:pt-0">
             <Container>
@@ -16,10 +18,10 @@ export default function About() {
                                 component="div"
                                 className="text-primary-400 uppercase font-haffer-r"
                             >
-                                // <span className="text-text">A propos</span>
+                                // <span className="text-text">{t("about.ancre")}</span>
                             </Typography>
                             <Typography variant="h2" component="h2" className="leading-none">
-                                Pourquoi me choisir ?
+                                {t("about.title")}
                             </Typography>
                         </div>
                         <div className="max-w-2xl flex flex-col gap-4 mt-2.5">
@@ -28,20 +30,14 @@ export default function About() {
                                 component="p"
                                 className="font-haffer-r text-dark text-balance"
                             >
-                                Développeur web freelance à Madagascar,créative
-                                design ,expert WordPress, WooCommerce et SEO,
-                                avec plus de 5 ans d’expérience et plus de 50
-                                sites web professionnels conçus dans divers
-                                secteurs.
+                                {t("about.desc1")}
                             </Typography>
                             <Typography
                                 variant="body"
                                 component="p"
                                 className="font-haffer-r text-dark"
                             >
-                                En tant que freelance déclaré, j'offre des
-                                prestations fiables et conforme aux standards
-                                professionnels.
+                                {t("about.desc2")}
                             </Typography>
                         </div>
                     </div>

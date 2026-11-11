@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Hero from "@/components/section/hero/Hero";
 import About from "@/components/section/about/About";
 import Service from "@/components/section/service/Service";
@@ -11,11 +12,12 @@ import ContactSection from "@/components/section/contact/ContactSection";
 
 
 export const LandingPage: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <>
             <SEO
-                title="Freelance, expert en WordPress et développer front-end"
-                description="Freelance basé à Madagascar, spécialisée dans la création de site web unique, moderne, optimisé, et référencé SEO."
+                title={t("landing.seo.title")}
+                description={t("landing.seo.desc")}
             />
 
             <main>

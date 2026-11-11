@@ -1,0 +1,213 @@
+{
+    "landing": {
+        "seo": {
+            "title": "Freelance WordPress Expert & Front-End Developer",
+            "desc": "Freelancer based in Madagascar, specializing in creating unique, modern, performance-optimized, and SEO-friendly websites."
+        }
+    },
+    "hero": {
+        "badge": "Your best partner",
+        "title": "A website",
+        "titleColor": "your best asset",
+        "text": "You are not here by chance. You are in the right place to give your project the visibility it deserves."
+    },
+    "about": {
+        "ancre": "About",
+        "title": "Why choose me?",
+        "desc1": "Freelance web developer based in Madagascar, creative design, WordPress, WooCommerce, and SEO expert, with over 5 years of experience and more than 50 professional websites designed across various sectors.",
+        "desc2": "As a registered freelancer, I offer reliable services that meet professional standards."
+    },
+    "stats": {
+        "exp": "Years of experience",
+        "projects": "Completed projects",
+        "clients": "Satisfied companies"
+    },
+    "nav": {
+        "about": "About",
+        "services": "Services",
+        "reviews": "Reviews",
+        "portfolio": "Portfolio"
+    },
+    "timeline": {
+        "2021": {
+            "label": "2021 - 2023",
+            "title": "Initiation and passion",
+            "content": "Started as a web developer and web development trainer. Discovered my passion for this job, shared experiences and built websites for IT service companies, training centers, blogs, travel and tourism projects. Creation and customization of WordPress themes"
+        },
+        "2024": {
+            "label": "2024",
+            "title": "Freelance and expansion",
+            "content": "With three years of experience, I worked as a subcontractor for French companies. Solving countless technical problems and bugs. Interventions and creation of simple and complex websites, particularly in real estate, rental investment, and various front-end projects."
+        },
+        "2025": {
+            "label": "2025",
+            "title": "Experience and versatility",
+            "content": "Experienced developer, WordPress specialist and pixel-perfect integrator. Interventions in numerous web projects for Malagasy, French and Canadian companies. Collaboration with NGOs, organizations, real estate sectors, women's centers, concierge services and various other fields. Expertise in web performance and technical SEO."
+        },
+        "2026": {
+            "label": "2026",
+            "title": "Confirmed expertise",
+            "content": "Always driven by my passion, I continue my activity as a registered freelancer. Having become an expert webmaster, WordPress holds no secrets for me: theme creation and customization, plugin development, web performance optimization and technical SEO. Mastery of Gutenberg, WooCommerce, Elementor, Divi, Avada and many other tools. I have reached about fifty completed projects, confirming my expertise and versatility."
+        }
+    },
+    "service": {
+        "title": "Let's work together",
+        "text": "I design and develop custom digital solutions tailored to every need.",
+        "serviceBtn": "Work with me"
+    },
+    "portfolio": {
+        "title": "My work speaks for itself",
+        "text": "My projects span a wide variety of industries worldwide.",
+        "btn": "Work with me",
+        "more": "See more",
+        "less": "See less"
+    },
+    "testimonials": {
+        "ancre": "Testimonials",
+        "title": "What they wrote",
+        "text": "Discover some of the feedback received, featuring representative testimonials from satisfied clients."
+    },
+    "faq": {
+        "title": "Find answers to common questions"
+    },
+    "faqList": {
+        "item1": {
+            "question": "Why choose me?",
+            "answer": "We create high-performing, custom-tailored, and optimized websites. Beyond aesthetic design, we guarantee flawless fluidity, effective SEO, and an engaging user experience. Furthermore, we support you at every step and provide comprehensive training so you can manage your site completely independently."
+        },
+        "item2": {
+            "question": "You are based in Madagascar, how do you handle the time difference?",
+            "answer": "The time difference poses no problem in our collaboration. Our responsive team adapts to your working hours to ensure regular follow-up and smooth communication, regardless of your time zone."
+        },
+        "item3": {
+            "question": "Why trust me?",
+            "answer": "Our clients often say that working with us is like finding a rare gem on the internet: we prioritize transparency, technical excellence, and a trusting partnership."
+        },
+        "item4": {
+            "question": "How can I track the progress of my project?",
+            "answer": "We use modern project management tools so you have total real-time visibility. You receive regular updates and can check the progress of your website at any time."
+        },
+        "item5": {
+            "question": "What are your rates?",
+            "answer": "Our rates are very affordable and adapt according to the complexity and specifics of your project. Contact us directly to get a personalized, no-obligation quote."
+        },
+        "item6": {
+            "question": "Do you guarantee the quality of your services?",
+            "answer": "Yes, absolutely. Each project is carried out with rigor, transparency, and professionalism. We are committed to delivering reliable, durable results that perfectly meet your expectations."
+        }
+    },
+    "servicesList": {
+        "wordpress": {
+            "title": "WordPress Development",
+            "description": "Creation of elegant, attractive, high-performing and secure websites.",
+            "tags": ["Showcase", "E-commerce", "Redesign", "Maintenance"]
+        },
+        "customDev": {
+            "title": "Custom Development",
+            "description": "Modern and unique tailor-made development. Each project is designed to be scalable, performant and perfectly aligned with your goals.",
+            "tags": [
+                "Plugin Creation",
+                "Theme Creation",
+                "Creative Design",
+                "Pixel Perfect Design"
+            ]
+        },
+        "maintenance": {
+            "title": "Maintenance & Debugging",
+            "description": "A service designed to guarantee stability, security and performance, in order to offer a smooth user experience.",
+            "tags": ["Maintenance", "Performance", "Security"]
+        },
+        "optimization": {
+            "title": "Web Optimization",
+            "description": "Optimization of websites, content and overall performance.",
+            "tags": ["SEO", "Visibility", "Responsive", "Performance"]
+        }
+    },
+    "contact": {
+        "title": "Let's work together",
+        "text": "I would be delighted to hear from you. Please fill out this form."
+    },
+    "footer": {
+        "app": {
+            "title": "App",
+            "about": "About",
+            "services": "Services",
+            "portfolio": "Portfolio",
+            "cta": "CTA"
+        },
+        "info": {
+            "title": "Information",
+            "faq": "FAQ",
+            "reviews": "Reviews",
+            "legal": "Legal Notice"
+        },
+        "social": {
+            "title": "Social Media",
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn",
+            "github": "Github"
+        },
+        "contact": {
+            "title": "Contact",
+            "email": "Email",
+            "whatsapp": "WhatsApp",
+            "phone": "Phone"
+        }
+    },
+    "contactBtn": "Contact me",
+    "form": {
+        "name": "First Name",
+        "lastname": "Last Name",
+        "mail": "Email",
+        "Message": "How can I help you?",
+        "send": "Send message",
+        "load": "Sending...",
+        "validate": {
+            "success": "Message sent successfully!",
+            "notice1": "Thank you for contacting us.",
+            "notice2": "We will get back to you as soon as possible.",
+            "btn": "Send another message"
+        },
+        "error": {
+            "server": "Connection error. Please try again later.",
+            "send": "An error occurred while sending."
+        },
+        "empty": "Please fill in all required fields before sending the message."
+    },
+    "metionLegal": {
+        "seo": {
+            "title": "Legal Notices",
+            "desc": "Read our site's legal notices: information about our website, privacy policy, and your rights as a user."
+        },
+        "back": "Back to home",
+        "title": "Legal Notice",
+        "update": "Last updated:",
+        "updateTime": "September 10, 2026",
+        "description": {
+            "note1": "These legal notices aim to define the terms of use for the Codeur mdg website and its services. By accessing this site, you fully accept these legal notices without reservation.",
+            "note2": "The information provided on this site is for informational purposes only. Codeur mdg strives to ensure the accuracy of the published data. For any questions or remarks regarding the site's content, please contact us via the email address mentioned above.",
+            "property": "Site Owner",
+            "address": "Address",
+            "nif": "Tax Identification Number (NIF)",
+            "stat": "Statistical Number (STAT)",
+            "email": "Email Address",
+            "creator": "Site Creator",
+            "hebergement": "Hosting",
+            "hebergementText": "The Codeur mdg website is hosted by"
+        }
+    },
+
+    "notFound": {
+        "seo": {
+            "title": "Page Not Found",
+            "desc": "The page you are looking for does not exist or has been moved."
+        },
+        "content": {
+            "title": "This page does not exist",
+            "desc": "The link might be broken, or the page may have been moved. Either way, there is nothing here but very large numbers.",
+            "btn": "Back to Home"
+        }
+    },
+    "backTop" : "Back to top"
+}

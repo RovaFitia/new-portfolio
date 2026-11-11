@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 import { Container } from "@/components/container/Container";
@@ -7,13 +8,18 @@ import Logo from "@/components/ui/Logo";
 import Hamburger from "./Hamburger";
 import NavMobile from "./NavMobile";
 
-import { NAV_LINKS } from "@/data/data";
+// import { NAV_LINKS } from "@/data/data";
 import { scrollToSection } from "@/utils/scrollToSection";
+import { useNavLinks } from "@/data/data";
+import { LanguageSwitcher } from "@/components/lang/LanguageSwitcher";
 
 export default function Navbar(): JSX.Element {
+    const { t } = useTranslation();
+    const NAV_LINKS = useNavLinks();
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const toggleMenu = () => setIsOpen((prev) => !prev);
     const [isScrolled, setIsScrolled] = useState(false);
+
 
       useEffect(() => {
         const handleScroll = () => {
@@ -51,9 +57,11 @@ export default function Navbar(): JSX.Element {
                     </div>
 
                     {/* CTA Desktop */}
-                    <div className="hidden items-center gap-3 lg:flex">
+                    <div className="hidden items-center gap-4 lg:flex">
+                        <LanguageSwitcher />
+
                         <Button variant="solid" size="md" onClick={(e) => scrollToSection(e, "#cta")}>
-                            Contactez-moi
+                            { t("contactBtn")}
                         </Button>
                     </div>
 
